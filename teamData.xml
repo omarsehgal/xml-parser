@@ -1,0 +1,5185 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<teamlist>
+	<team name="DB-IDC" site="idc png">
+		<userlist>
+			<user name="tsela" type="admin"/>
+			<user folder="fm" name="mmelnik"/>
+			<user folder="sc" name="osehgal"/>
+			<user folder="sc" name="cchiu"/>
+			<user folder="sc" name="lajones1"/>
+			<user folder="sc" name="lchen4"/>
+			<user folder="sc" name="cfhill"/>
+			<user folder="sc" name="vreddy"/>
+			<user name="oraw" type="admin"/>
+			<user name="efratk" type="admin"/>
+			<user name="afishman" type="admin"/>
+			<user name="yosi" type="admin"/>
+			<user name="akovalch" type="admin"/>
+			<user name="nlevy" type="admin"/>
+			<user name="gilk" type="admin"/>
+			<user name="kspokoin" type="member"/>
+			<user folder="fm" name="tesisto" type="member"/>
+			<user name="snassar" type="member"/>
+			<user name="sivanb" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+			<mailtemp name="Missing information">
+				Your ticket cannot be processed as we are missing infomation.
+				Please update your ticket with the relevant information.
+			</mailtemp>
+
+			<mailtemp name="Unavailable">
+				I cannot reach you on your mobile/cubic phone.
+				Please contact me when you become available.
+			</mailtemp>
+
+			<mailtemp name="Move workarea">
+				In order to resize your area, it must be moved to a different disk
+				This can be done overnight, but you must not write to your disk during this procedure.
+				The next day, you should open all setup sessions that you had.
+				Please let me know if tonight is a good time for this.
+			</mailtemp>
+
+			<closetemp name="Done">
+				Done!
+			</closetemp>
+
+			<closetemp name="Fixed">
+				Fixed!
+			</closetemp>
+
+			<closetemp name="Late STOD">
+				I've extended your STOD for XXXXX days but since it was going to expire today,
+				you MUST run this command TODAY in order to complete the extension:
+				XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+				Next time please request an extension at least 3 days before expiry.
+			</closetemp>
+
+			<closetemp name="Added to group">
+				Added you to the unix group.
+				Please notice it takes up to 1 hour to update, and that you'll need to 
+				start a new session in order for it to take effect (by running ssh `hostname`)
+			</closetemp>
+			<closetemp name="CMCC">
+				Hi,
+				We do not handle this type of issue,
+				please open a service request to CMCC for this ticket.
+			</closetemp>
+			<mailtemp name="More than 16 groups">
+				Hi,
+				I tried to add you to the group, but you already belong to 16 groups, which is the Unix limit.
+				Please remove yourself from groups by running "gm" on idc-login machine and follow the interactive menu.
+				Let me know once you are done and I will add you to the group.
+			</mailtemp>
+			<mailtemp name="Global directory">
+				Hi,
+				Your personal details, including cubic/mobile phone numbers are not updated in the coorporate phonebook.
+				To help us support you in the future, we would appreciate if you could update your details:
+				1. Go to Intel home.
+				2. Click 'Corp. Phonebook', on the right.
+				2. Search for yourself, in the format: lastName, firstName.
+				3. Click on your name link in the result table.
+				4. Click on the 'Update details' button on the upper right corner.
+				
+				Thank-you for helping us help you!
+			</mailtemp>
+			<closetemp name="FM account request">
+				In order to get an account in FM, submit a service request (http://servicedesk.intel.com/sdcxuser/intel/user/userrrnstart.asp?txtLink=RequestsUser) to Region: AMR, Site: FM - Folsom, Building: FM1 - Folsom 1. 
+				
+				In order to get mpgall and gsrall Unix groups in FM, please fill the form on http://dbcenter.iil.intel.com/DynamicForms.aspx?form=unix_permissions_request_allsites&amp;project=mmg
+				Make sure to choose "fm" in the "Group Domain".
+			</closetemp>
+			<closetemp name="SC account request">
+				In order to get an account in SC, submit a service request (http://servicedesk.intel.com/sdcxuser/intel/user/userrrnstart.asp?txtLink=RequestsUser) to Region: AMR, Site: MI - Mission, Santa Clara , Building: SC12 - Santa Clara 12.
+				
+				In order to get mpgall and gsrall Unix groups in SC, please fill the form on http://dbcenter.iil.intel.com/DynamicForms.aspx?form=unix_permissions_request_allsites&amp;project=mmg
+				Make sure to choose "sc" in the "Group Domain".
+			</closetemp>
+			<closetemp name="cpu1270">
+				Hi,
+				
+				These groups are not owned by us, so we can't add you to it. You should ask it from HSW IP request.
+				
+				You should file a request here:
+				https://hsdhsw.intel.com/HSD/HASWELL/default.aspx#access_request/default.aspx
+				
+				In order to get cpu1270, select ip_domain  'process', and ip_access_method 'unix'
+				In order to get nhm/nhmdb, select ip_domain  'sch_lay_db' , and ip_access_method 'unix'
+			</closetemp>
+			<closetemp name="sklall">
+				In order to be added to sklall UNIX group, please fill a request at the below web page:
+				
+				https://hsdskl.iil.intel.com/hsd/skylake/default.aspx#access_request/default.aspx?ldudef=1
+				
+				Once your request will be approved by the project manager, you will be automatically added to that group.
+			</closetemp>
+			<closetemp name="gsrall permissions">
+				In order to be added to gsrall UNIX group, please fill a request at the below web page:
+				
+				http://dbcenter.iil.intel.com/DynamicForms.aspx?form=unix_permissions_request_allsites &amp; project=mmg
+				
+				Once your request will be approved by the project manager, you will be automatically added to that group.
+			</closetemp>
+			<closetemp name="mpgall Permissions">
+				In order to be added to mpgall UNIX group, please fill a request at the below web page:
+				
+				http://dbcenter.iil.intel.com/DynamicForms.aspx?form=unix_permissions_request_allsites &amp; project=mmg
+				
+				Once your request will be approved by the project manager, you will be automatically added to that group.
+			</closetemp>
+			<closetemp name="mpgall Permissions">
+				In order to be added to mpgall UNIX group, please fill a request at the below web page:
+				
+				http://dbcenter.iil.intel.com/DynamicForms.aspx?form=unix_permissions_request_allsites &amp; project=mmg
+				
+				Once your request will be approved by the project manager, you will be automatically added to that group.
+			</closetemp>
+			<closetemp name="mpgdsgn permissions">
+				In order to be added to mpgdsgn UNIX group, please fill a request at the below web page:
+				
+				http://dbcenter.iil.intel.com/DynamicForms.aspx?form=unix_permissions_request_allsites &amp; project=mmg
+				
+				Once your request will be approved by the project manager, you will be automatically added to that group.
+			</closetemp>
+		</templates>
+
+		<categories>
+			<category description="UESetup bugs, UESetup troubles or errors" name="UESetup &amp; Database tools">
+			</category>			
+			<category description="Questions/Requests/Bugs regarding the ATF mechanism" name="ATFs">
+			</category>
+			<category name="CadTools CheckIn">
+			</category>
+			<category description="Only issues about the Safran tool" name="Safran">
+			</category>
+			<category description="Anything about the Cereal tool" name="Cereal/FCM">
+			</category>
+			<category description="Anything about the Gallery tool" name="Gallery">
+			</category>
+			<category description="Only issues regarding the daHelp application. This is not a general category!" name="daHelp">
+			</category>
+			<category description="Any library/tool permissions issue" name="Permissions">
+			</category>
+			<category description="GDBimport, GDBexport, CI/CO." name="Import/Export tools">
+			</category>
+			<category description="Registers configuration database tool" name="ConfigDB Tool">
+			</category>
+			<category description="Creating, removing, renaming etc. of FUBs" name="FUBs Issues">
+			</category>
+			<category description="Any request to create/remove/rename blocks from the database" name="Create/remove blocks">
+			</category>
+			<category description="Record system issues that impact the DB" name="System issues">
+			</category>
+			<category description="IP export to remote projects" name="IP-Export">
+				<field name="IP Consumer">
+					<option name="Jaketown"/>
+					<option name="IVYBridge"/>
+					<option name="Haswell"/>
+					<option name="DTS"/>
+				</field>
+				<field name="Type">
+					<option name="Unix Archive"/>
+					<option name="SQL"/>
+					<option name="Synchronicity"/>
+					<option name="Other"/>
+					<option name="Access"/>
+				</field>
+			</category>
+			<category description="DB-Center technical issues only" name="Web DB-Center">
+			</category>
+			<category name="ECO / HSD issues">
+			</category>
+			<category description="Resizing/Extending STODs or workareas" name="STOD/Disk issues">
+				<field name="Requested operation">
+					<option name="Merge STODs"/>
+					<option name="Extend STOD's duration"/>
+					<option name="Resize STOD"/>
+				</field>
+				<field name="Full STOD path">
+				</field>
+			</category>
+		</categories>
+	</team>
+	
+	<team name="DB-US" site="sc fm">
+		<userlist>
+			<user name="osehgal" type="admin"/>
+			<user name="kganesh"/>
+			<user name="akagalwa"/>			
+			<user name="lajones1"/>
+			<user name="mmaestre"/>
+			<user folder="idc" name="yosi"/>
+			<user folder="idc" name="ysteger"/>
+			<user folder="idc" name="efratk"/>
+			<user folder="idc" name="afishman"/>
+			<user folder="idc" name="akovalch"/>
+			<user folder="idc" name="nlevy"/>
+			<user folder="idc" name="tsela"/>
+			<user folder="idc" name="gilk"/>
+			<user folder="other" name="mmelnik"/>
+			<user name="szhong1" type="member"/>
+			<user name="tesisto" type="member"/>
+			<user name="rgsreeni" type="member"/>
+			<user name="mlbellap" type="member"/>
+		</userlist>
+	
+		<flags>
+		</flags>
+	
+		<templates>
+			<mailtemp name="Missing information">
+				Your ticket cannot be processed as we are missing infomation.
+				Please update your ticket with the relevant information.
+			</mailtemp>
+			<mailtemp name="Unavailable">
+				I cannot reach you on your mobile/cubic phone.
+				Please contact me when you become available.
+			</mailtemp>			
+			<mailtemp name="Move workarea">
+				In order to resize your area, it must be moved to a different disk
+				This can be done overnight, but you must not write to your disk during this procedure.
+				The next day, you should open all setup sessions that you had.
+				Please let me know if tonight is a good time for this.
+			</mailtemp>
+			<closetemp name="Done">
+				Done!
+			</closetemp>
+			<closetemp name="Added to group">
+				Added you to the unix group.
+				Please notice it takes up to 1 hour to update, and that you'll need to 
+				start a new session in order for it to take effect (by running ssh `hostname`)
+			</closetemp>
+			<closetemp name="CMCC">
+				Please open a service request for this ticket.
+			</closetemp>
+			<mailtemp name="More than 16 groups">
+				Hi,
+				I tried to add you to the group, but you already belong to 16 groups, which is the Unix limit.
+				Please remove yourself from groups by running "gm" on idc-login machine and follow the interactive menu.
+				Let me know once you are done and I will add you to the group.
+			</mailtemp>
+			<mailtemp name="Global directory">
+				Hi,
+				Your personal details, including cubic/mobile phone numbers are not updated in the coorporate phonebook.
+				To help us support you in the future, we would appreciate if you could update your details:
+				1. Go to Intel home.
+				2. Click 'Corp. Phonebook', on the right.
+				2. Search for yourself, in the format: lastName, firstName.
+				3. Click on your name link in the result table.
+				4. Click on the 'Update details' button on the upper right corner.
+				
+				Thank-you for helping us help you!
+			</mailtemp>
+		</templates>
+
+		<categories>
+			<category name="Database">
+				<field name="Name of Expert User Consulted"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>			
+			
+			<category name="CadTools CheckIn">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>
+
+			<category name="Opus/Safran">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>
+			
+			<category name="Web DB-Center">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="Gallery/SQL">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>
+			
+			<category name="ATF">
+				<field name="Name of Expert User Consulted"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+		
+                        <category name="FCM">
+                                <field name="Name of Expert User Consulted"/>
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>                        
+                                <field name="Hostname" sysvar="hostname"/>
+                                <field name="DMSPATH" sysvar="DMSPATH"/>
+                        </category>
+
+	
+			<category name="daHelp">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="Disk/GWA issues">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="UEsetup">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+
+			<category name="Netlist with TP">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="Nike Netlister">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>			
+
+			<category description="Opus issues or issues regarding schematics" name="Opus &amp; Schematics"/>
+		</categories>
+	</team>
+	
+	
+	<team name="iMPV (AVL)" site="idc png ibw">
+		<userlist>
+			<user name="anisim"/>
+			<user name="dbenita"/>
+			<user name="zvolf"/>
+			<user name="belfere"/>
+			<user name="dlichten"/>
+			<user name="truhman" type="admin"/>
+			<user name="anathans"/>
+			<user name="bmiriam"/>
+			<user name="ashapira"/>
+			<user name="abasem"/>
+			<user name="geitan"/>
+			<user name="ybaron"/>
+			<user name="aniao"/>
+			<user name="iohad"/>
+			<user name="oisraeli"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="vberinsk" type="member"/>
+			<user name="dshiran" type="member"/>
+			<user name="lport" type="member"/>
+			<user name="amurashk" type="member"/>
+			<user name="dcherkin" type="member"/>
+			<user name="ohavshus" type="member"/>
+		</userlist>
+
+		<flags>
+			<flag name="Future-Enh"/>
+		</flags>
+	
+		<templates>
+			<mailtemp name="Default">
+				GSR Cheat Sheet: firefox /p/gsr/rtl/proj_bin/setup/gsr_cheat_sheet.html
+			</mailtemp>
+			
+			<mailtemp name="Missing information">
+				We are missing information,
+				please send us the details below as soon as possible.
+			</mailtemp>
+
+			<mailtemp name="Contact in person">
+				This issue should be solved in person.
+				Please contact me in my cubic.
+			</mailtemp>
+			
+			<closetemp name="Default">
+				GSR Cheat Sheet: firefox /p/gsr/rtl/proj_bin/setup/gsr_cheat_sheet.html
+			</closetemp>
+
+			<closetemp name="Thanks/Done">
+				Your issue has been resolved.
+				If there are any further problems, please contact me.
+			</closetemp>
+
+			<closetemp name="GEMS Ticket">
+				This issue should be handled solved by CMCC,
+				Please submit a GEMS ticket at http://servicedesk.intel.com
+			</closetemp>
+			
+			<closetemp name="Known issue/problem">
+				Please read the known solution in the URL below:
+			</closetemp>
+			
+			<closetemp name="UNIX groups form">
+				For these UNIX groups - please fill out the relevant web-based form:
+				gsr_rtl http://www-iec.iil.intel.com/IPRequest/RequestForm.aspx?ProjectID=242
+				gsrall http://www-iec.iil.intel.com/IPRequest/RequestForm.aspx?ProjectID=243
+				nhm http://www-iec.iil.intel.com/IPRequest/RequestForm.aspx?ProjectID=233
+			</closetemp>
+			
+			<closetemp name="Added to CSD pool">
+				You were added to a new CSD pool: XXXXX (Group: AVL)
+				Please allow 15 minutes before using machines from this pool.
+			</closetemp>
+			
+			<closetemp name="CATS - New account">
+				Hi,
+				You should have an account with your username as the initial CATS password.
+				Please invoke CATS application by running: 'cats' (under setup)
+				At first invocation you'll be asked to change your password to a more secure one (8 characters, letters, numbers, special, etc.). 
+
+				Note that you won't need to remember CATS password and it will be un-encrypted in ~/.cats/.cats.passwd.
+			</closetemp>
+			
+			<closetemp name="Added to UNIX group">
+				You were added to the new UNIX group, as requested.	
+				You will see new groups only on new logins,
+				For changes to apply on all xterms, it is recommended to restart your VNC session when possible.
+			</closetemp>
+			<closetemp name="UNIX group adgm">
+				Please use this form to submit your request:
+				
+				http://dbcenter.iil.intel.com/DynamicForms.aspx?form=unix_permissions_request_allsites&amp;project=mmg
+				 
+				
+				In case you have problems accessing the site you can submit the request from UNIX prompt like this:
+				
+				adgm --request-group-access -A &lt;username&gt; -G gsr_rtl -s iil --justification '&lt;a detailed justification which includes a contact in SNB IDC&gt;'
+			</closetemp>
+		</templates>
+	
+		<categories>
+			<category description="Any problem with UNIX permissions" name="UNIX permissions/groups">
+				<field name="File/Dir full path"/>
+				<field name="Needed group"/>
+			</category>
+			<category description="Anything to do with your STOD areas, or STOD policy change" name="STOD">
+				<field name="Full STOD path"/>
+				<field name="Fix needed">
+					<option name="Change STOD policy"/>
+					<option name="Enlarge existing STOD area"/>
+					<option name="Extend existing STOD area"/>
+				</field>
+			</category>
+			<category description="Anything to do with Netbatch qslot/permissions or any other Netbatch problems" name="Netbatch">
+				<field name="Netbatch pool">
+					<option name="linux_idc (RedHat)"/>
+					<option name="sles_idc (SuSE)"/>
+					<option name="vpool_idc (Virtual pool)"/>
+					<option name="linux_ptk (PTK)"/>
+				</field>
+				<field name="Cluster">
+					<option name="FC"/>
+					<option name="Power"/>
+					<option name="LT"/>
+					<option name="DFX"/>
+					<option name="GLS"/>
+					<option name="Uncore"/>
+					<option name="UCOD"/>
+					<option name="MEM"/>
+					<option name="EXE"/>
+					<option name="FE"/>
+					<option name="MSID"/>
+					<option name="OOO"/>
+					<option name="Formal"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			<category description="Anything to do with CSD pool permissions" name="CSD">
+				<field name="Cluster">
+					<option name="FC"/>
+					<option name="Power"/>
+					<option name="LT"/>
+					<option name="DFX"/>
+					<option name="GLS"/>
+					<option name="Uncore"/>
+					<option name="UCOD"/>
+					<option name="MEM"/>
+					<option name="EXE"/>
+					<option name="FE"/>
+					<option name="MSID"/>
+					<option name="OOO"/>
+					<option name="Formal"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			<category description="Anything to do with BMW tool permissions or any other problem" name="BMW">
+				<field name="Cluster">
+					<option name="FC"/>
+					<option name="Power"/>
+					<option name="LT"/>
+					<option name="DFX"/>
+					<option name="GLS"/>
+					<option name="Uncore"/>
+					<option name="UCOD"/>
+					<option name="MEM"/>
+					<option name="EXE"/>
+					<option name="FE"/>
+					<option name="MSID"/>
+					<option name="OOO"/>
+					<option name="Formal"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			<category description="Anything to do with CATS tool permissions or any other problem" name="CATS">
+				<field name="Cluster">
+					<option name="FC"/>
+					<option name="Power"/>
+					<option name="LT"/>
+					<option name="DFX"/>
+					<option name="GLS"/>
+					<option name="Uncore"/>
+					<option name="UCOD"/>
+					<option name="MEM"/>
+					<option name="EXE"/>
+					<option name="FE"/>
+					<option name="MSID"/>
+					<option name="OOO"/>
+					<option name="Formal"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			<category description="Anything regarding models' cross-folder mirroring/rsynching, or other problems" name="Cross folder">
+				<field name="Cluster">
+					<option name="FC"/>
+					<option name="Power"/>
+					<option name="LT"/>
+					<option name="DFX"/>
+					<option name="GLS"/>
+					<option name="Uncore"/>
+					<option name="UCOD"/>
+					<option name="MEM"/>
+					<option name="EXE"/>
+					<option name="FE"/>
+					<option name="MSID"/>
+					<option name="OOO"/>
+					<option name="Formal"/>
+					<option name="Other"/>
+				</field>
+				<field name="folder">
+					<option name="FM"/>
+					<option name="SC"/>
+					<option name="PDX"/>
+					<option name="RA"/>
+					<option name="LC"/>
+					<option name="PTK"/>
+					<option name="Other"/>
+				</field>
+				<field name="Problematic path"/>
+			</category>
+			<category description="Ample related problems" name="Ample">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Pipetrace related problems" name="Pipetrace">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="RTL environment problems" name="RTL environment">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Test_DB related problems" name="Test_DB">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="TVPV problems, in AV models environment" name="TVPV">
+				<field name="Problem with">
+					<option name="Netbatch"/>
+					<option name="Remote folders"/>
+					<option name="Trex"/>
+					<option name="Setup script"/>
+					<option name="Other"/>
+				</field>
+				<field name="Test Dir"/>
+			</category>
+			<category description="Run tools issues (trex, simregress etc')" name="Run tools">
+			</category>
+			<category description="Arena issues" name="ArenaV"/>
+			<category description="New Validation Engineers/Students UNIX permissions and environment setup. To be filled with the buddy." name="New User">
+				<field name="Cluster"/>
+				<field name="Missing UNIX groups"/>
+				<field name="CSD Pools"/>
+				<field name="Netbatch qslots"/>
+			</category>
+			<category description="Any ifeed/nbflow problem, or bug report" name="ifeed">
+				<field name="Feeder host"/>
+				<field name="Test-dir"/>
+				<field name="simregress command-line"/>
+			</category>
+			<category name="Reginfo">
+			</category>
+			<category name="Emulation">
+			</category>
+			<category name="ABS">
+			</category>
+			<category description="Anything regarding BitKeeper permissions, or other problems" name="BitKeeper">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Problematic model">
+				</field>
+				<field name="Cluster">
+					<option name="LT"/>
+					<option name="FE"/>
+					<option name="Power"/>
+					<option name="UCOD"/>
+					<option name="FC"/>
+					<option name="EXE"/>
+					<option name="Other"/>
+					<option name="MLC"/>
+					<option name="MEM"/>
+					<option name="MSID"/>
+					<option name="Uncore"/>
+					<option name="GLS"/>
+					<option name="DFX"/>
+					<option name="Formal"/>
+					<option name="OOO"/>
+				</field>
+			</category>
+			<category description="Anything regarding GateKeeper permissions, or other problems" name="GateKeeper">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Problematic model">
+				</field>
+				<field name="Cluster">
+					<option name="LT"/>
+					<option name="FE"/>
+					<option name="Power"/>
+					<option name="UCOD"/>
+					<option name="FC"/>
+					<option name="EXE"/>
+					<option name="Other"/>
+					<option name="MLC"/>
+					<option name="MEM"/>
+					<option name="MSID"/>
+					<option name="Uncore"/>
+					<option name="GLS"/>
+					<option name="DFX"/>
+					<option name="Formal"/>
+					<option name="OOO"/>
+				</field>
+			</category>
+			<category name="Venus: debug">
+			</category>
+			<category name="Venus: granite">
+			</category>
+			<category name="Venus: run test">
+			</category>
+			<category name="Triage">
+			</category>
+			<category name="Venus: freqcov">
+			</category>
+			<category name="Venus: regression tracking">
+			</category>
+			<category name="Specman">
+			</category>
+			<category name="Cte Tools">
+			</category>
+		</categories>
+	</team>
+	
+	<team name="FUB PV-US" site="sc fm">
+		<userlist>
+			<user name="sagrawal"/>
+			<user name="asubbiah"/>
+			<user name="ttrinh"/>
+			<user name="schoe"/>
+			<user name="mvenka2" type="admin"/>
+			<user name="bchoi"/>
+			<user name="fhu"/>
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="kdesigan" type="member"/>
+			<user name="rthangav" type="member"/>
+			<user name="smpatel" type="member"/>
+			<user name="sbhal" type="member"/>
+			<user name="awalimbe" type="readonly"/>
+			<user name="apanda" type="member"/>
+			<user name="akasibha" type="member"/>
+			<user name="gilt" type="member"/>
+		</userlist>
+	
+		<flags>
+		</flags>
+	
+		<templates>
+		
+			<closetemp name="Tango FAQ">
+				Please read Tango FAQ at:
+				http://carmel.iil.intel.com/folders/mpg-design/mmg%20ida/DP%20Design/Lists/FAQs/Categorized.aspx
+				Thanks!
+			</closetemp>
+		
+		</templates>
+	
+		<categories>
+                        <category name="Presto">
+                                <field name="Name of Expert User Consulted"/>
+                        </category>				
+			<category name="Power">
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Flipper">
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Raptor">
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoXT Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="TangoXT How to">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="TangoXT Fail">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="TangoXT Problem">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>	
+			<category name="CAPREP">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="CfgWriter">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="EvrWriter">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Tango Checkin">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoCBD Fail">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoCBD Problem">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoCBD Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Other">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category description="Tango CI" name="Tango CI Failure">
+				<template>
+					Tango CI
+				</template>
+			</category>
+			<category description="iScan Tickets" name="iScan DP">
+			</category>
+			<category description="RaliCBD" name="RaliCBD">
+			</category>
+			<category description="Rali" name="Rali">
+			</category>
+			<category name="TangoLR">
+			</category>
+			<category name="TWO">
+			</category>
+			<category name="CT_Sizer">
+			</category>
+			<category name="MDF">
+			</category>
+			<category name="MixPV Issue">
+			</category>
+		</categories>
+	</team>
+
+
+	
+	<team name="Opus and Schematics" site="idc ibw">
+		<userlist>
+			<user name="fswaid" type="admin"/>
+			<user name="galbalan"/>
+			<user name="lefrat"/>
+		</userlist>
+		
+		<flags>
+		</flags>
+	
+		<templates>
+		</templates>
+		
+		<categories>
+			<category name="Schematics">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Netlist">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="TP">
+			</category>
+		</categories>
+	</team>
+	
+	<team name="FUB PV" site="idc png ibw">
+		<userlist>
+			<user name="yaell"/>
+			<user name="oweiss"/>
+			<user name="leons"/>
+			<user name="ygoren"/>
+			<user name="ndovgole"/>
+			<user name="eserlin"/>
+			<user name="kshalash"/>
+			<user name="sivanb"/>	
+			<user name="lefrat"/>
+			<user name="leonidg"/>
+			<user name="ifaat"/>	
+			<user name="lnisim"/>
+			<user name="doronb"/>
+			<user name="fswaid"/>
+			<user name="yairl"/>
+            <user name="mbin"/>
+			<user name="chenr"/>
+			<user name="ofridman" type="member"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="afraiman" type="readonly"/>
+			<user name="ahorn" type="readonly"/>
+			<user name="agihon" type="readonly"/>
+			<user name="ebarnett" type="readonly"/>
+			<user name="usherel" type="readonly"/>
+			<user name="vmosheye" type="readonly"/>
+			<user name="trotem" type="member"/>
+			<user name="yregev" type="member"/>
+			<user name="gambar" type="member"/>
+			<user name="yhnacson" type="member"/>
+			<user name="kadanh" type="member"/>
+			<user name="inas" type="member"/>
+			<user name="sm1" type="member"/>
+			<user name="tmishra" type="member"/>
+			<user name="skr" type="member"/>
+			<user name="tsela" type="member"/>
+			<user name="smichael" type="admin"/>
+			<user name="ebabin" type="member"/>
+		</userlist>
+	
+		<flags>
+		</flags>
+	
+		<templates>	
+			<closetemp name="Tango FAQ">
+				Please read Tango FAQ at:
+				http://carmel.iil.intel.com/folders/mpg-design/mmg%20ida/DP%20Design/Lists/FAQs/Categorized.aspx
+				Thanks!
+			</closetemp>
+			<closetemp name="Fixed (re-enter setup)">
+				The problem is fixed - please re-enter setup and rerun.
+				
+				Thanks,
+				$FULLNAME.
+			</closetemp>
+			<closetemp name="Fixed (no re-enter)">
+				The problem was fixed - please rerun (no need to re-enter UE setup).
+				
+				Thanks,
+				$FULLNAME.
+			</closetemp>
+		</templates>
+	
+		<categories>
+			<category name="TangoCBD Fail">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>			
+			</category>
+			<category name="TangoCBD Problem">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>			
+			</category>
+			<category name="TangoCBD Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>			
+			</category>
+			<category name="Flipper"/>
+			<category name="Netlist with TP"/>
+			<category name="TangoXT Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+			</category>
+			<category name="TangoXT How to">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+			</category>
+			<category name="TangoXT Fail">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+			</category>
+			<category name="TangoXT Problem">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+			</category>
+			<category description="Any problem with the Tango Check In flow" name="Tango Check In">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Block" sysvar="DBB"/>
+			</category>
+			<category name="CfgWriter">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="CFG File"/>
+			</category>
+			<category name="EvrWriter">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="EVR File"/>
+			</category>	
+			<category description="Problems with FCT check PTF" name="Check PTF (tango_ci)"/>
+			<category description="Reporting issues in high voltage flow" name="High Voltage Flow">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Problems with shell checker" name="Shell-checker">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Support: 0547886026 -IDC/0547884859-Yakum\nAnything regarding capacitance report created during tango run" name="CAPREP">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Reporting of issues related to multi-port flow" name="MultiPort">
+			</category>
+			<category description="PV related issues in RLS flow" name="RLS PV">
+			</category>
+			<category description="Seal related issues" name="Seal">
+				<field name="Area">
+				</field>
+			</category>
+			<category description="Cases where end transition check in tango_ci failed" name="End transition (Tango CI)">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted">
+				</field>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Duet" site="idc png ibw">
+		<userlist>
+			<user name="lnisim" type="admin"/>
+			<user name="mtolchin" type="member"/>
+			<user name="msrour" type="member"/>
+			<user name="cdovev" type="member"/>
+			<user name="aohana" type="member"/>
+			<user name="abarhum" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+
+		<categories>
+			<category name="ATF">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Rules">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="GUI">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Crash">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Performance">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		</categories>
+	</team>
+
+<team name="Pshift-US" site="fm sc">
+                <userlist>
+                        <user name="greddy"/>
+                        <user name="gdevaraj" type="admin"/>
+                	<user name="snguyen" type="member"/>
+			<user name="dstemen" type="member"/>
+		</userlist>
+
+                <flags>
+                </flags>
+
+                <templates>
+                </templates>
+
+                <categories>
+                        <category name="Pshift  Restore">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+                        <category name="Pshift  Rebuild">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+
+                </categories>
+        </team>
+	
+		<team name="Duet-US" site="fm sc">
+		<userlist>
+			<user name="hntran"/>
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="sagrawal" type="member"/>
+			<user name="schoe" type="admin"/>
+			<user name="wszeto" type="member"/>
+			<user name="asubbiah" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+
+		<categories>
+			<category name="ATF">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Rules">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="GUI">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Crash">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Performance">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Other">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+		</categories>
+	</team>
+
+        <team name="DFT-US" site="sc">
+                <userlist>
+                        <user name="bkrishna"/>
+                        <user name="tvho"/>
+                        <user name="ydalay"/>
+                	<user name="vgaddam" type="admin"/>
+			<user name="nabixler" type="member"/>
+			<user name="prshah" type="member"/>
+			<user name="vgannu" type="member"/>
+			<user name="gnorton" type="member"/>
+			<user name="jkcarrol" type="member"/>
+		</userlist>
+
+                <flags>
+                </flags>
+
+                <templates>
+                </templates>
+
+                <categories>
+                        <category name="Scan">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>                           
+                        </category>
+                        <category name="Question">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>                           
+                        </category>
+                        <category name="Other">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>                           
+                        </category>
+                </categories>
+        </team>
+	
+	<team name="FE Scan Tools" site="idc png ibw">
+		<userlist>
+			<user name="cdovev" type="admin"/>			
+			<user name="kmbasma" type="member"/>
+			<user name="fswaid" type="member"/>
+			<user name="omilter" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+
+		<categories>
+			<category description="iScan flow for RLS fubs" name="RLS flow">
+			</category>
+			<category description="Checking in / out iScan files" name="Check in/out">
+			</category>
+			<category description="iScan DRC for all types of fubs" name="iScan DRC">
+			</category>
+			<category description="Back annotation from Eden to OPUS" name="Back annotation to OPUS">
+			</category>
+			<category description="iScan flow for DP fubs" name="DP flow">
+			</category>
+			<category name="Scanout">
+			</category>
+		</categories>
+	</team>
+	
+	<team name="Presto" site="idc png ibw">
+		<userlist>
+			<user name="oelster"/>
+			<user name="zwayner"/>
+			<user name="omedlins" type="admin"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="yoavl" type="member"/>
+		</userlist>
+	
+		<flags>
+		</flags>
+		
+		<templates>
+			<mailtemp name="Missing info">
+				We are missing information, please send us x, y, z as soon as possible.
+			</mailtemp>
+			
+			<mailtemp name="Cannot reproduce">
+				We can not reproduce the problem in our environment, please contact us.
+			</mailtemp>
+		
+			<closetemp name="Done">
+				Your issue has been resolved.
+				Thanks a lot for opening a daHelp ticket!
+			</closetemp>
+			
+			<closetemp name="Presto bug">
+				Hi, to resolve this issue, we need a Presto bug fix.
+			</closetemp>
+			<closetemp name="solved by user">
+				Solved by the user
+			</closetemp>
+		</templates>
+	
+		<categories>		
+			<category description="Any problem with Presto execution" name="Tool running">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Any problem with parasitics data" name="Parasitics">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="Problem with Opus communication" name="Opus">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Any issue with optimization tool" name="Optim">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Any issue with Nova" name="Nova">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="Any problem with power related activities in Presto" name="Power">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="Presto is stuck or has crashed" name="Crash">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="General questions" name="How do I?">
+				<field name="Presto version"/>
+			</category>
+		</categories>
+	</team>
+	
+	
+	<!--
+	<team name="Anchor" site="idc png">
+		<userlist>
+			<user name="navits"></user>
+			<user name="faboud"></user>
+			<user name="vigonich"></user>
+			<user name="graz"></user>
+			<user name="shafez"></user>
+			<user name="opherk"></user>
+			<user name="hadarb"></user>
+			<user name="ialush"></user>
+		</userlist>
+	
+		<flags>
+		</flags>
+	
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="Gui issues or Bind keys"/>
+			<category name="Flows or Methodologies"/>
+			<category name="Save or Load DB"/>
+			<category name="Database issue"/>
+			<category name="Manual Placement"/>
+			<category name="Auto placement"/>
+			<category name="Auto sizing"/>
+			<category name="Manual routing"/>
+			<category name="Auto routing (Trex)"/>
+			<category name="Congestion"/>
+			<category name="Power or RV"/>
+			<category name="Noise"/>
+			<category name="Metal Allocation"/>
+			<category name="PV"/>
+			<category name="How do I?"/>
+			<category name="New Idea"/>
+		</categories>
+	</team>
+	 -->
+
+	<team name="RV-US" site="sc fm">
+		<userlist>
+       			<user name="rkvargan"/>
+			<user name="mkulka2" type="member"/>
+			<user name="sthouta" type="member"/>
+			<user name="awalimbe" type="member"/>
+			<user name="naydenov" type="readonly"/>
+			<user name="nhaider" type="readonly"/>
+			<user name="nrsatti" type="readonly"/>
+			<user name="bmuralim" type="member"/>
+			<user name="mkmishra" type="admin"/>
+			<user name="kganesh" type="readonly"/>
+			<user name="ebabb" type="readonly"/>
+			<user name="tsriniv" type="readonly"/>
+		</userlist>
+
+		<templates>
+		</templates>
+
+		<categories>
+			<category description="General RV failures" name="RV Issues">
+				<field name="Design Owner">
+				</field>
+				<field name="Cell/Fub Name">
+				</field>
+				<field name="Milestone Requested">
+					<option name="SILVER"/>
+					<option name="Other"/>
+					<option name="None"/>
+					<option name="RLSFLO"/>
+					<option name="LORF"/>
+					<option name="LOR2"/>
+				</field>
+				<field name="Expert User Consulted">
+				</field>
+				<field name="Submitter's Site">
+					<option name="Banglore"/>
+					<option name="Other"/>
+					<option name="Folsom"/>
+					<option name="Israel"/>
+					<option name="Santa Clara"/>
+				</field>
+				<field name="DFM Supplied">
+					<option name="to M4"/>
+					<option name="to M3"/>
+					<option name="to M2"/>
+					<option name="to M1"/>
+					<option name="M5 or higher"/>
+					<option name="None"/>
+				</field>
+			</category>
+			<category description="General Failures in RV Extraction" name="RV Extraction">
+				<field name="Design Owner">
+				</field>
+				<field name="Carmel Box File">
+				</field>
+				<field name="Cell/Fub Name">
+				</field>
+				<field name="Milestone Requested">
+					<option name="SILVER"/>
+					<option name="Other"/>
+					<option name="RLSFLO"/>
+					<option name="LORF"/>
+					<option name="LOR2"/>
+				</field>
+				<field name="Expert User Consulted">
+				</field>
+				<field name="Submitter's Site">
+					<option name="Bangalore"/>
+					<option name="Other"/>
+					<option name="Folsom"/>
+					<option name="Israel"/>
+					<option name="Santa Clara"/>
+				</field>
+				<field name="DFM Supplied">
+					<option name="to M4"/>
+					<option name="to M3"/>
+					<option name="to M2"/>
+					<option name="to M1"/>
+					<option name="None"/>
+					<option name="to M5 or higher"/>
+				</field>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Noise-US" site="sc fm">
+		<userlist>
+			<user name="hcwong"/>
+			<user name="yhuang9"/>
+			<user name="rthangav" type="admin"/>
+			<user name="tsriniv"/>
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+
+		<categories>
+			<category name="Noise Issues"/>
+		</categories>
+	</team>
+	
+	<team name="FEV-IDC" site="idc png iind ibw">
+		<userlist>
+			<user name="memmer"/>
+			<user name="ahecht"/>
+			<user name="dbuhnik"/>
+			<user name="mhanuka" type="admin"/>
+			<user name="nherman" type="member"/>
+			<user name="akinapak" type="member"/>
+			<user name="sr" type="member"/>
+			<user name="ylauner" type="member"/>
+			<user name="lhaikin" type="member"/>
+		</userlist>
+
+		<flags>
+			<flag name="Bug (CFF)"/>
+			<flag name="Bug (Smart)"/>
+			<flag name="Bug (Seqver)"/>
+			<flag name="Bug (Lira)"/>
+			<flag name="DB issue"/>
+		</flags>
+
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="ATF">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Extract imp">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Gen imp">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Gen Spec">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Greenstone (waiver)">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Interface">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="assumver Imp">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="assumver spec">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="check in">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="check out">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="connectivity">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="rtl2rtl">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="syn2sim">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                        </category>
+			<category name="verify">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="MCO related issues" name="MCO">
+				<field name="Workarea path" sysvar="$WORK_AREA_ROOT_DIR"/>
+			</category>
+		</categories>
+	</team>
+	
+	<team name="FEV-US" site="sc fm">
+		<userlist>
+			<user name="akinapak" type="admin"/>
+			<user name="lqtran"/>
+			<user name="ydalay"/>			
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="prshah" type="member"/>
+			<user name="bhha" type="member"/>
+			<user name="prprenti" type="member"/>
+		</userlist>
+
+		<flags>
+			<flag name="pend_tl_fix"/>
+		</flags>
+
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="ATF">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Extract imp">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Gen imp">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Gen Spec">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Greenstone (waiver)">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Interface">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Retiming">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="assumver Imp">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="assumver spec">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="check in">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="check out">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="connectivity">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="verify">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="other">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="syn2sim" name="syn2sim">
+				<field name="Workarea path">
+				</field>
+			</category>
+		</categories>
+	</team>
+	
+	<team name="Logic-IDC" site="idc png iind ibw">
+		<userlist>
+			<user name="asapir"/>
+			<user name="lcadany"/>
+			<user name="sdany" type="admin"/>
+			<user name="yaely"/>
+			<user name="rafis"/>
+			<user name="mrotbart"/>
+			<user name="urib"/>
+			<user name="hdeivisx"/>
+			<user name="rcoh15x"/>
+			<user name="ytsimani"/>
+			<user name="olsenc"/>
+			<User name="aaharon1"/>
+			<user folder="sc" name="gnorton"/>
+			<user folder="sc" name="vgaddam"/>
+			<user folder="sc" name="ydalay"/>
+			<user name="cchiu" type="readonly"/>
+			<user folder="sc" name="prshah"/>
+			<user name="dgrossko" type="member"/>
+			<user name="akamer" type="member"/>
+			<user name="arachevx" type="member"/>
+			<user name="mlerer" type="member"/>
+			<user name="asher1x" type="member"/>
+			<user name="dcohend" type="member"/>
+			<user name="smeir2" type="member"/>
+			<user name="emanor" type="readonly"/>
+			<user name="vrubin1" type="member"/>
+			<user name="talil" type="member"/>
+			<user name="agurevic" type="member"/>
+			<user name="khalaf" type="member"/>
+			<user name="ezilberm" type="member"/>
+			<user name="kmbasma" type="member"/>
+			<user name="mlerer" type="member"/>
+			<user name="osaman" type="member"/>
+			<user name="awolff" type="member"/>
+		</userlist>
+
+		<flags>
+			<flag name="Env"/>
+			<flag name="Tool"/>
+			<flag name="Bad Usage"/>
+			<flag name="Enhancement"/>
+			<flag name="System"/>
+		</flags>
+
+		<templates>
+			<mailtemp name="Unavailable">
+				I cannot reach you on your mobile/cubic phone.
+				Please contact me when you become available.
+			</mailtemp>
+			
+			<mailtemp name="iMPV issue">
+				This issue belongs to the iMPV (AVL) team.
+				I will forward your ticket to their team, but next time please open it directly to them.
+			</mailtemp>
+			
+			<closetemp name="Done">
+				Done!
+			</closetemp>
+			<mailtemp name="Part ENUM issue">
+				PROBLEM: Partitioner TOOL doesn't support "enum"s
+				SOLUTION: Will be supplied by DT's in next Q
+				WORK-AROUND:
+				Instead of 
+				typedef enum node { A = 1'b0, B = 1'b1 } t_enum_x;  
+				Please use the next type definiton: 
+				`ifdef INST_ON 
+				      typedef enum node { A = 1'b0, B = 1'b1 } t_enum_x; 
+				`else 
+				      typedef enum node { A = 1'b0, B = 1'b1 } t_enum; 
+				      typedef union packed { 
+				                  reg f1; 
+				                  t_enum f2; 
+				      } t_enum_x; 
+				`endif  
+				
+				When running synthesis the union will be defined, that includes ENUM and it will create a proper Netlist.
+				
+				PEREVENTIVE ACTION comment:
+				Fixing the bug in Partitioner Tool.
+			</mailtemp>
+			<mailtemp name="Part Private Blocks_Info DB">
+				(In order to define a certain Hier in the RTL to be a Fub, we use the blocks info list file.
+				This is actually a list of Hiers in the RTL that are considered to be BE Fubs.)
+				
+				      Usage: 
+				          Defining a certain HIER in the RTL to be a Fub, or, deleting certain Hier which is a Fub (so it can be further partitioned in to smaller Fubs)
+				            What to do:
+				         Working with a private list, below is a cheat-sheet on how to do that: 
+				            (Currently, the central blocks info list resides in a central area and used during your RTLbuild flow).
+				         
+				1.	Find what is your model's version of Blocks_Info: 
+				&gt;&gt; grep -A 1 "blocks_info" $MODEL_ROOT/cfg/RTLToolData.pm
+				Find your version under the key VERSION =&gt; "&lt;your version&gt;" that will appear in the UNIX shell
+				
+				2.	Copy the Blocks_Info to your private area:
+				&gt;&gt; cp -r $PROJ_TOOLS/blocks_info/&lt;your version&gt;   &lt;your_place&gt; 
+				
+				3.	Remove/Add the name of your FUB by editing the file:
+				&gt;&gt; gvim &lt;your place&gt;/&lt;your version&gt;/gsrcore/fubs_blocks_info.csv 
+				      or
+				            &gt;&gt; gvim &lt;your place&gt;/&lt;your version&gt;/gsr4cg/fubs_blocks_info.csv
+				
+				4.	Create tool *patch* file under your $MODEL_ROOT/   
+				&gt;&gt; gvim $MODEL_ROOT/&lt;model name&gt;.patch
+				            and copy the next line to it:
+				            $ToolConfig_tools{hier}{SUB_TOOLS}{blocks_info}{PATH} = "&lt;your_place&gt;/&lt;your version&gt;";
+				
+				5.	setenv TOOLCONFIG_OVERRIDE: 
+				&gt;&gt; setenv TOOLCONFIG_OVERRIDE $MODEL_ROOT/&lt;model name&gt;.patch 
+				
+				6.	Remove the old target area of the synthesis run (if exist) and recompile the model: 
+				&gt;&gt; rm -rf $MODEL_ROOT/target/part_&lt;model&gt;*
+				            &gt;&gt; simbuild -dut &lt;your dut&gt; -s pcmake -s ucmake -syn +.
+			</mailtemp>
+			<closetemp name="PART:Private Blocks_Info DB">
+				(In order to define a certain Hier in the RTL to be a Fub, we use the blocks info list file.
+				This is actually a list of Hiers in the RTL that are considered to be BE Fubs.)
+				
+				      Usage: 
+				          Defining a certain HIER in the RTL to be a Fub, or, deleting certain Hier which is a Fub (so it can be further partitioned in to smaller Fubs)
+				            What to do:
+				         Working with a private list, below is a cheat-sheet on how to do that: 
+				            (Currently, the central blocks info list resides in a central area and used during your RTLbuild flow).
+				         
+				1.	Find what is your model's version of Blocks_Info: 
+				&gt;&gt; grep -A 1 "blocks_info" $MODEL_ROOT/cfg/RTLToolData.pm
+				Find your version under the key VERSION =&gt; "&lt;your version&gt;" that will appear in the UNIX shell
+				
+				2.	Copy the Blocks_Info to your private area:
+				&gt;&gt; cp -r $PROJ_TOOLS/blocks_info/&lt;your version&gt;   &lt;your_place&gt; 
+				
+				3.	Remove/Add the name of your FUB by editing the file:
+				&gt;&gt; gvim &lt;your place&gt;/&lt;your version&gt;/gsrcore/fubs_blocks_info.csv 
+				      or
+				            &gt;&gt; gvim &lt;your place&gt;/&lt;your version&gt;/gsr4cg/fubs_blocks_info.csv
+				
+				4.	Create tool *patch* file under your $MODEL_ROOT/   
+				&gt;&gt; gvim $MODEL_ROOT/&lt;model name&gt;.patch
+				            and copy the next line to it:
+				            $ToolConfig_tools{hier}{SUB_TOOLS}{blocks_info}{PATH} = "&lt;your_place&gt;/&lt;your version&gt;";
+				
+				5.	setenv TOOLCONFIG_OVERRIDE: 
+				&gt;&gt; setenv TOOLCONFIG_OVERRIDE $MODEL_ROOT/&lt;model name&gt;.patch 
+				
+				6.	Remove the old target area of the synthesis run (if exist) and recompile the model: 
+				&gt;&gt; rm -rf $MODEL_ROOT/target/part_&lt;model&gt;*
+				            &gt;&gt; simbuild -dut &lt;your dut&gt; -s pcmake -s ucmake -syn +.
+			</closetemp>
+			<closetemp name="PART: ENUM">
+				PROBLEM: Partitioner TOOL doesn't support "enum"s
+				SOLUTION: Will be supplied by DT's in next Q
+				WORK-AROUND:
+				Instead of 
+				typedef enum node { A = 1'b0, B = 1'b1 } t_enum_x;  
+				Please use the next type definiton: 
+				`ifdef INST_ON 
+				      typedef enum node { A = 1'b0, B = 1'b1 } t_enum_x; 
+				`else 
+				      typedef enum node { A = 1'b0, B = 1'b1 } t_enum; 
+				      typedef union packed { 
+				                  reg f1; 
+				                  t_enum f2; 
+				      } t_enum_x; 
+				`endif  
+				
+				When running synthesis the union will be defined, that includes ENUM and it will create a proper Netlist.
+				
+				PEREVENTIVE ACTION comment:
+				Fixing the bug in Partitioner Tool.
+			</closetemp>
+			<mailtemp name="Default Partition">
+				Intro:
+				Each RTL element (always blocks, generate blocks, assign, instance of module and ect.) that is tagged with a partition tag will be removed from the original parent module and be relocated to a new partition model with the name that is specified as the value of the partition tag 
+				The new created partitioned modules will be created in the file &lt;partitioned module name&gt;.vs 
+				RTL elements (module items that can have partition tags applied to them) that were not tagged by any partition tag will be relocated to a default partition, by default the new partitioned module name will be &lt;parent module name&gt;_default. 
+				GSR eRTL methodology forbids "_default" partitions and crashes the RTL Netlist flow on such violation.
+				
+				What to do:
+				1. Let's find what logic was considered as "default":
+				find $MODEL_ROOT/target/part_&lt;your_dut&gt;_nlapp/post_nlapp -name "*_default.vs"
+				2. Let's go over each and every file found and talk to RTL owner in order to debug the issue.
+			</mailtemp>
+		</templates>
+	
+		<categories>
+			<category name="CHEF">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>
+			</category>
+			<category name="Partitioner">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>
+			</category>
+			<category name="Compilation">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category name="Simulation">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category name="Debug (Verdi)">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category name="MAS (Pegasus)"/>
+			<category name="Environment">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category name="Lintra">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category name="Arena">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category name="SystemVerilog">
+				<field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category description="CRGen enhancements" name="CRGen">
+			    <field name="Workarea path" sysvar="MODEL_ROOT"/>
+				<field name="Central model" sysvar="CENTRAL_ROOT"/>
+				<field name="Problematic command"/>			
+			</category>
+			<category name="4Value">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Problematic command">
+				</field>
+				<field name="Central model" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Net Listing">
+				<field name="Workarea path">
+				</field>
+				<field name="Problematic command">
+				</field>
+				<field name="Central model">
+				</field>
+			</category>
+		</categories>
+	</team>
+	
+	<team name="Logic-US" site="sc fm">
+		<userlist>
+                        <user name="tvho"/>                        
+			<user name="lgrao"/>
+			<user name="gnorton"/>
+			<user name="nabixler"/>
+			<user name="bhha"/>
+			<user name="vgaddam" type="admin"/>
+			<user name="ydalay"/>
+			<user name="prshah"/>
+			<user folder="idc" name="asapir"/>
+			<user folder="idc" name="aaharon"/>
+			<user folder="idc" name="guyb"/>
+			<user folder="idc" name="lcadany"/>
+			<user folder="idc" name="eyariv"/>
+			<user folder="idc" name="sdany"/>
+			<user folder="idc" name="yaely"/>
+			<user folder="idc" name="rafis"/>
+			<user folder="idc" name="mrotbart"/>
+			<user folder="idc" name="ariel"/>
+			<user folder="idc" name="talih"/>
+			<user folder="idc" name="urib"/>
+			<user folder="idc" name="hdeivisx"/>
+			<user folder="idc" name="rcoh15x"/>
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="vgannu" type="member"/>
+			<user name="nmalam" type="member"/>
+			<user name="jkcarrol" type="member"/>
+			<user name="mwhitne1" type="member"/>
+			<user name="jho3" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+			<mailtemp name="Unavailable">
+				I cannot reach you on your mobile/cubic phone.
+				Please contact me when you become available.
+			</mailtemp>
+			
+			<mailtemp name="iMPV issue">
+				This issue belongs to the iMPV (AVL) team.
+				I will forward your ticket to their team, but next time please open it directly to them.
+			</mailtemp>
+			
+			<closetemp name="Done">
+				Done!
+			</closetemp>
+		</templates>
+	
+		<categories>
+                        <category name="CRGen">
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+                        <category name="CHEF">
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+                        <category name="Partitioner">
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+			<category name="BMW">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="CATS">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="DFT">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="FEV">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="FPV">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="FSA">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="GLS/LVR">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Coverage">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Database">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Env">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Model_Build">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Sim_Debug">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Sim_Test_Build">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Sim_Test_Run">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Specman">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="RTL_Other_Tools">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="SmartFeeder">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+		</categories>
+	</team>
+
+	<team name="FC PV-US" site="fm sc">
+                <userlist>
+                <user name="nwiner"/>
+                <user name="alei" type="admin"/>
+                <user name="mbin"/>
+                <user name="tdeng"/>
+                <user name="kgopal1"/>
+                <user name="ngnagark"/>
+                <user name="jrai"/>
+                <user name="gmiller"/>
+                <user name="zyyang"/>
+                        <user name="nkmuthus"/>
+                        <user name="njain2"/>
+                        <user name="astaylor"/>
+                        <user name="kganesh"/>
+                        <user name="cchiu"/>
+                        <user name="vbui" type="readonly"/>
+                        <user name="dcalliga" type="readonly"/>
+                        <user name="dgovinda" type="readonly"/>
+                        <user name="vhu" type="readonly"/>
+                        <user name="alakshma" type="readonly"/>
+                        <user name="wnlee" type="readonly"/>
+                        <user name="egpetric" type="readonly"/>
+                        <user name="dcsmall" type="readonly"/>
+                        <user name="dntran2" type="readonly"/>
+                        <user name="gunsal" type="readonly"/>
+                        <user name="bwalters" type="readonly"/>      
+                        <user name="asengupt" type="readonly"/>                                                                            
+                        <user name="dori" type="member"/>
+                        <user name="sfu" type="member"/>
+                        <user name="gamargit" type="readonly"/>
+                	<user name="ctsai1" type="member"/>
+			<user name="nskarnik" type="member"/>
+			<user name="sye" type="member"/>
+		</userlist>
+
+                <flags>
+                </flags>
+
+                <templates>
+                </templates>
+
+                <categories>
+                        <category name="Fullchip Netlist">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+                        <category name="Repeater Flow">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+                </categories>
+        </team>
+	
+	<team name="FCT-US" site="sc fm">
+		<userlist>
+      		<user name="nwiner"/>			
+      		<user name="mbin"/>
+      		<user name="tdeng"/>
+      		<user name="alei"/>			
+      		<user name="ngnagark"/>
+       		<user name="jrai"/>
+      		<user name="zyyang"/>
+			<user name="nkmuthus"/>
+			<user name="njain2"/>
+			<user name="astaylor"/>
+            <user name="kganesh"/>
+			<user name="cchiu"/>
+			<user name="sye"/>
+			<user name="gzhong"/>
+			<user name="vbui" type="readonly"/>
+			<user name="dcalliga" type="readonly"/>
+			<user name="dgovinda" type="readonly"/>
+			<user name="vhu" type="readonly"/>
+			<user name="alakshma" type="readonly"/>
+			<user name="wnlee" type="readonly"/>
+			<user name="egpetric" type="readonly"/>
+			<user name="dcsmall" type="readonly"/>
+			<user name="dntran2" type="readonly"/>		
+			<user name="gunsal" type="readonly"/>
+			<user name="bwalters" type="readonly"/>																												
+			<user name="dori" type="member"/>
+			<user name="sfu" type="member"/>
+			<user name="gamargit" type="readonly"/>
+			<user name="tsai" type="member"/>
+			<user name="jgarbe" type="member"/>
+			<user name="gmiller" type="admin"/>
+			<user name="rmuril2" type="member"/>
+			<user name="ctsai1" type="member"/>
+			<user name="kshalash" type="member"/>
+			<user name="kchng" type="member"/>
+			<user name="schavali" type="member"/>
+			<user name="Chavali, Srinath" type="member"/>
+			<user name="trahman1" type="member"/>
+			<user name="jmishra1" type="member"/>
+			<user name="nskarnik" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+	
+		<categories>
+			<category description="Schematic related issues" name="Netlist">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Issues related to layout parasitics" name="FC_PV.VISA">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category description="" name="FC_PV.parade">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Repeater issues" name="FC_PV.rpt">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Timing flow issues" name="FCT.apv">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Spec assignment" name="FCT.specs">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Tango timing tool issues" name="FCT.tango">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Fubs2 is use to bring fub data into section model and to release fub data to FCT_GOLDEN" name="FCT.fub2">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Timing clients are out of sync, hanging, slow, etc" name="FCT.client">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Indicator related issues, unix and/or sql based" name="FCT.indicators">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Clock related issues" name="FCT.clockAndSkew">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Issues related with FCT overrides." name="FCT.overrides">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>								
+		</categories>
+	</team>
+
+	<team name="CBD" site="idc png iind ibw">
+		<userlist>			
+            <user name="omilter"/>
+            <user name="shafez"/>
+            <user name="evainer"/>
+            <user name="nkopf"/>
+			<user name="ifaat"/>
+			<user name="leonidg"/>
+			<user name="inas" type="admin"/>
+			<user name="along" type="member"/>
+			<user name="dleon"/>
+			<user name="kadanh"/>
+			<user name="lnisim"/>
+			<user name="wosnat"/>
+			<user name="ebabin"/>
+       		<user folder="other" name="awalimbe"/>
+       		<user folder="other" name="wszeto"/>
+       		<user folder="other" name="hsjawand"/>
+       		<user folder="other" name="dahluwal"/>
+       		<user folder="other" name="asharma"/>
+			<user folder="other" name="vskoleso"/>
+			<user name="ykoral"/>
+			<user name="sivanb"/>
+			<user name="cchiu" type="readonly"/>
+			<user folder="sc" name="pkornisx"/>
+			<user folder="sc" name="zwebbx"/>
+			<user name="anaitsat" type="member"/>
+			<user folder="other" name="yaell" type="member"/>
+			<user folder="other" name="gdevaraj" type="member"/>
+			<user name="trotem" type="member"/>
+			<user name="av4" type="member"/>
+			<user name="mtopaz" type="member"/>
+			<user name="bemanuel" type="member"/>
+			<user name="ddanan" type="member"/>
+			<user name="vvlada" type="readonly"/>
+		</userlist>
+	
+		<flags>
+			<flag name="SBRS" owners="dleon along"/>
+			<flag name="Tracking" owners="dleon"/>
+			<flag name="W4SNPS" owners="shafez along dleon kadanh omilter"/>
+		</flags>
+	
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="Design Compiler">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="ICC PLACE">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="ICC ClockTreeMesh">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="ICC Routing">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="ECO">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="tg_ta">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="tango_lr">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Legend">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+			</category>
+			<category name="RLS Study">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="duet">
+			</category>
+			<category description="dedicated specifically for the pilot" name="rlsf_pilot">
+			</category>
+		</categories>
+	</team>
+
+	<team name="CBD-US" site="sc fm">
+		<userlist>
+      		<user name="mmccoy"/>
+      		<user name="bwalters" type="readonly"/>
+      		<user name="gunsal" type="readonly"/>
+      		<user name="pgjoshi"/>			
+      		<user name="sagrawal"/>
+      		<user name="hntran"/>
+      		<user name="awalimbe"/>
+      		<user name="wszeto"/>			
+      		<user name="hsjawand"/>
+                <user name="kllee"/>
+       		<user name="dahluwal"/>			
+      		<user name="asharma"/>
+      		<user name="mvenka2"/>
+			<user name="vskoleso" type="admin"/>
+                <user name="syu7"/>
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="mkulka2" type="member"/>
+			<user name="aadabi" type="member"/>
+			<user name="mkmishra" type="member"/>
+			<user name="dlrogers" type="readonly"/>
+			<user name="sbhal" type="member"/>
+			<user name="kdesigan" type="member"/>
+			<user name="pplunava" type="member"/>
+			<user name="jmbarbe1" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="eden_rls">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="synthesis">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="tg_ta">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="flier">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="mda">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="tango_lr">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Legend">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="RTL2RLS">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="icc">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>								
+			<category name="dct">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+				<field name="Is the RTL from a released model or private model"/>
+				<field name="Did the RTL pass LINTRA checks"/>
+			</category>
+			<category name="flow_manager">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="mdf">
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+			</category>
+			<category description="Extraction Tool" name="carmel">
+				<template>
+					N/A
+					
+				</template>
+			
+				<field name="File/Dir full path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		</categories>
+	</team>
+
+        <team name="Unicorn-US" site="fm sc">
+                <userlist>
+                        <user name="sagrawal" type="admin"/>
+                </userlist>
+
+                <flags>
+                </flags>
+
+                <templates>
+                </templates>
+
+                <categories>
+                </categories>
+        </team>
+
+        <team name="Unicorn-IDC" site="idc ibw">
+                <userlist>
+                        <user name="sagrawal" type="admin"/>
+                </userlist>
+
+                <flags>
+                </flags>
+
+                <templates>
+                </templates>
+
+                <categories>
+                </categories>
+        </team>
+
+	<team name="FUB Extraction" site="idc png iind ibw">
+		<userlist>
+			<user name="osnate" type="admin"/>
+			<user name="shroman"/>
+			<user name="gilk"/>
+			<user name="ltepper"/>
+			<user name="syu7"/>
+			<user name="dhalvor"/>
+			<user name="mkulka2"/>
+			<user name="rkvargan"/>
+			<user name="mirib"/>
+			<user name="alexbeyd"/>
+			<user name="cchiu" type="readonly"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="Carmel">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="SKL RC ext tool" name="Scarlet">
+			</category>
+		</categories>
+	</team>
+
+	<team name="FUB Extraction-US" site="sc fm">
+		<userlist>
+		        <user name="mkulka2" type="admin"/>	
+			<user name="dhalvor"/>
+			<user name="rkvargan"/>			
+                        <user name="kganesh"/>
+			<user name="sthouta" type="member"/>
+			<user name="awalimbe" type="member"/>
+			<user name="mkmishra" type="member"/>
+		</userlist>
+		
+		<flags>
+		</flags>
+		
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="Carmel">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Other">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+		</categories>
+	</team>
+
+	<team name="Fub Lay-IDC" site="idc ibw">
+		<userlist>
+			<user name="akhayim" type="admin"/>
+                        <user folder="fm" name="mmaestre"/>
+                        <user folder="fm" name="snguyen"/>
+                        <user folder="fm" name="greddy"/>
+                        <user folder="fm" name="dstemen"/>
+                        <user folder="sc" name="gdevaraj"/>
+                        <user folder="sc" name="cfhill"/>
+                        <user folder="sc" name="wskan"/>
+                        <user folder="sc" name="aknigam"/>
+                        <user folder="sc" name="vreddy"/>
+			<user name="btsipi"/>
+			<user name="echigiri"/>
+			<user name="leor"/>
+			<user name="fpierre"/>
+			<user name="omeiri"/>
+			<user name="tkolat"/>
+			<user name="alexbeyd"/>
+			<user name="disaac"/>
+			<user name="abarhum"/>
+			<user folder="sc" name="kganesh"/>
+			<user folder="sc" name="rlstamne"/>			
+			<user name="cchiu" type="readonly"/>			
+			<user folder="sc" name="osehgal"/>
+			<user name="gsamasov" type="readonly"/>
+			<user name="ynavot" type="member"/>
+			<user name="dpparker" type="readonly"/>
+			<user folder="sc" name="kbasu" type="member"/>
+			<user name="mzaltzhe" type="member"/>
+			<user name="ssubr24" type="member"/>
+		</userlist>
+
+		<flags>
+			<flag name="High"/>
+			<flag name="Medium"/>
+			<flag name="Low"/>
+			<flag name="Question"/>
+			<flag name="Released"/>
+			<flag name="NA"/>
+			<flag name="Released2ClrCase"/>
+			<flag name="DuplicateTicket"/>
+			<flag name="Enhancment"/>
+			<flag name="ShowStoper"/>
+			<flag name="Resolved"/>
+		</flags>
+
+		<templates>
+			<closetemp name="developer">
+				resolved for developer version:
+				 
+				uesetup -ot /p/mpg/proc/common2/proj_tools/genesys/overrides/developer
+			</closetemp>
+			<closetemp name="latest">
+				resolved for latest version:
+				 
+				uesetup -ot /p/mpg/proc/common2/proj_tools/genesys/overrides/latest
+			</closetemp>
+			<closetemp name="developer ivb">
+				resolved for developer version:
+				-p ivbcore -pr 1270 -ot LOR1:GENESYS_PILOT
+			</closetemp>
+		</templates>
+	
+		<categories>
+			<category name="Genesys - Edit">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Genesys version" sysvar="GENESYS_VER"/>
+				<field name="Host name" sysvar="HOSTNAME"/>
+			</category>
+			<category name="Genesys - Other">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Genesys version" sysvar="GENESYS_VER"/>
+				<field name="Host name" sysvar="HOSTNAME"/>
+			</category>
+			<category name="Genesys - Place">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Genesys version" sysvar="GENESYS_VER"/>
+				<field name="Host name" sysvar="HOSTNAME"/>
+			</category>
+			<category name="Genesys - Router">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Genesys version" sysvar="GENESYS_VER"/>
+				<field name="Host name" sysvar="HOSTNAME"/>
+			</category>
+			<category name="ISS">
+				<template>
+					* ISS Summary or abort file:
+				</template>
+				<field name="PDS Directory" sysvar="PDSLOGS"/>
+			</category>
+			<category description="LRC checks" name="Genesys - LRC">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="eco gui" name="Genesys - ECO">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Fub Lay-US" site="sc fm">
+		<userlist>
+			<user folder="fm" name="dstemen"/>
+			<user folder="fm" name="aossman" type="readonly"/>
+			<user folder="fm" name="etahirov" type="readonly"/>
+			<user folder="fm" name="cyyang" type="readonly"/>
+			<user folder="fm" name="anpatel" type="readonly"/>												
+			<user folder="fm" name="ynavot"/>
+			<user folder="fm" name="ialush"/>						
+			<user folder="sc" name="aknigam" type="member"/>
+			<user folder="sc" name="gskumar" type="admin"/>
+			<user folder="sc" name="cfhill"/>
+			<user folder="sc" name="cchiu"/>
+			<user folder="fm" name="snguyen"/>
+			<user folder="sc" name="gdevaraj"/>
+			<user folder="sc" name="kganesh"/>
+			<user folder="sc" name="wskan"/>
+			<user folder="fm" name="mmaestre"/>			
+			<user folder="sc" name="snguyen"/>			
+			<user folder="fm" name="greddy"/>			
+			<user folder="fm" name="akilla"/>
+			<user folder="sc" name="vreddy"/>			
+			<user folder="sc" name="rlstamne"/>			
+			<user folder="sc" name="dstemen"/>			
+			<user folder="sc" name="cchiu"/>
+			<user folder="idc" name="ynavot"/>
+			<user folder="idc" name="ialush"/>
+			<user folder="idc" name="akhayim" type="readonly"/>
+			<user folder="idc" name="abarhum" type="readonly"/>
+			<user folder="idc" name="btsipi" type="readonly"/>
+			<user folder="idc" name="alexbeyd" type="readonly"/>
+			<user folder="idc" name="echigiri" type="readonly"/>
+			<user folder="idc" name="fpierre" type="readonly"/>
+			<user folder="idc" name="tkolat" type="readonly"/>
+			<user folder="idc" name="omeiri" type="readonly"/>
+			<user folder="idc" name="leor" type="readonly"/>
+			<user folder="sc" name="kbasu" type="member"/>
+			<user folder="sc" name="wfung" type="member"/>
+			<user folder="sc" name="smadhwap" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+			<closetemp name="latest">
+                                resolved for latest version:
+
+                                uesetup -ot /p/mpg/proc/common2/proj_tools/genesys/overrides/latest
+                        </closetemp>
+		</templates>
+	
+		<categories>
+			<category name="Genesys">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Genesys version" sysvar="GENESYS_VER"/>
+				<field name="Host name" sysvar="HOSTNAME"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Parade">
+                                <field name="EZQB file path"/>
+                                <field name="Tool version (Atlas)" sysvar="ATLAS"/>
+                                <field name="Tool version (Parade)" sysvar="PARADE"/>
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Host name" sysvar="HOSTNAME"/>
+                                <field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="GPDS">
+				<field name="Full path to testcase"/>
+				<field name="Cell name"/>
+				<field name="DMSPATH" sysvar="DMSPATH"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Host name" sysvar="HOSTNAME"/>
+				<field name="Name of Expert User Consulted"/>
+				<field name="UE Setup command"/>
+			</category>
+			<category description="DFM related bugs" name="DFM">
+			</category>
+		</categories>
+	</team>
+
+	<team name="Parade-IDC" site="idc png iind ibw">
+		<userlist>
+			<user name="ynavot" type="admin"/>
+			<user name="yhatiel"/>
+			<user name="graz"/>
+			<user name="akhayim"/>
+			<user name="btsipi"/>
+			<user name="navits"/>
+			<user name="danielbr"/>
+			<user name="ialush"/>
+			<user name="echigiri"/>
+			<user name="mnegri"/>
+			<user name="alazerso"/>
+			<user name="luri"/>
+			<user name="galbalan"/>
+			<user name="ostrulov"/>
+			<user name="dtatyana"/>
+			<user name="ibidassa"/>
+			<user name="vigonich"/>
+			<user name="ornag"/>
+			<user name="ctong"/>
+			<user name="ssaba"/>
+			<user name="aerez"/>
+			<user name="katyam"/>
+			<user name="yaizik"/>
+			<user name="whendawi"/>
+			<user name="azilbe3"/>
+			<user name="ytalker"/>
+			<user name="yeshkol"/>
+			<user name="cchiu" type="readonly"/>			
+			<user name="abarhum"/>
+			<user name="aeidenzo"/>
+			<user name="rzand"/>
+			<user name="ylevani"/>
+			<user name="fsaad1"/>
+			<user name="gbootman" type="member"/>
+			<user name="kshade" type="member"/>
+			<user name="samyz" type="member"/>
+			<user name="arosenba" type="member"/>
+			<user name="unatanzo" type="member"/>
+			<user name="cfarran" type="member"/>
+		</userlist>
+	
+		<flags>
+			<flag name="High"/>
+			<flag name="Medium"/>
+			<flag name="Low"/>
+			<flag name="Question"/>
+			<flag name="Released"/>
+			<flag name="NA"/>
+			<flag name="Released2ClrCase"/>
+			<flag name="DuplicateTicket"/>
+			<flag name="HSD"/>
+		</flags>
+	
+		<templates>
+			<mailtemp name="Missing info">
+				We are missing information, please send us EZQB cell/net/pin name.
+				Thanks!
+			</mailtemp>
+			
+			<mailtemp name="Non reproducible">
+				Please specify the steps you did in order to be able reproduce the problems.
+				Thanks!
+			</mailtemp>
+			
+			<mailtemp name="Wrong version">
+				You are using wrong tool versions, please reload setup or used the following ot file.
+				Thanks!
+			</mailtemp>
+			
+			<closetemp name="Thanks/Done">
+				Your issue has been resolved.
+				Thanks a lot for opening a daHelp ticket!
+			</closetemp>
+			
+			<closetemp name="Could not help">
+				Hi, we could not help you with this issue.
+				For further assistance contact your superior.
+			</closetemp>
+		</templates>
+	
+		<categories>
+
+			<category name="File I/O">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+
+			<category name="GUI">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+			</category>
+
+			<category name="BindKeys">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+			</category>
+
+			<category name="Strokes">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with the following flows: PA2ISS, LOEVR, RLS, Repeater, Silver..." name="FC Flows">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Subcategory">
+					<option name="LOEVR"/>
+					<option name="RLS"/>
+					<option name="Repeater"/>
+					<option name="Silver"/>
+					<option name="Other"/>
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with PV related commands/flow (PV advisory, IC Analysis)" name="PV">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with XTOR/Block Mode..." name="Placements">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Subcategory">
+					<option name="XTOR"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			
+			<category description="Any problem with Bus Design/Shake/Snap2Pin..." name="QB Expand">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with database or released rollup files/reports..." name="Rollup/DB related">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category name="How do I?">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+			</category>
+		
+			<category name="Power">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		
+			<category description="Any problem with FC reports/checkers commands..." name="FC Checkers/Reports">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		
+			<category description="Any problem with FUB level checkers/reports commands..." name="FUB Checkers/Reports">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with Vias editing/Via optimization GUI" name="Via Optimization">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with Congestion Analysis flow..." name="Congestion Analysis Flow">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with FUB level L.O flows..." name="FUB Flows">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Subcategory">
+					<option name="FubFlow"/>
+					<option name="HandShake"/>
+					<option name="CELL2ISS"/>
+					<option name="FUB2FC"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			<category description="Any issue with display/select objects in canavs" name="Visualization/Selection">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Problematic command">
+				</field>
+			</category>
+			<category description="Any problem with QEA, Trex, ART, Draw mode (PTPED)..." name="Routers/Routing">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Problematic command">
+				</field>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Subcategory">
+					<option name="ART"/>
+					<option name="Others"/>
+					<option name="QEA"/>
+					<option name="TREX"/>
+					<option name="PTPED"/>
+				</field>
+			</category>
+			<category description="Any issue with explorer tables and table setting (Net,Temp,Block,Bus,Wire...)" name="Explorer (GTABLE)">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Problematic command">
+				</field>
+			</category>
+			<category description="Any issue with PA2ISS flow" name="PA2ISS (Section Silvering Flow)">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Problematic command">
+				</field>
+			</category>
+			<category description="All Section/FUBL flows that relate to Metal fill flows and GUIs" name="Section/FUB Metal Fill Flows">
+				<field name="Cell name">
+				</field>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Preditor (HPR)">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+			</category>
+			<category name="Netlist/SCH/Connectivity">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="$WORK_AREA_ROOT_DIR"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+			</category>
+			<category name="Other">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+			</category>
+			<category description="Setting Routing Grid/Patterns" name="Tracks/Pattern Setting">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Parade-US" site="sc fm">
+		<userlist>
+			<user name="gskumar" type="admin"/>
+			<user name="ctong"/>
+			<user name="lhe8"/>			
+			<user name="tuann"/>
+			<user name="qvnguyen"/>
+			<user name="sye" type="member"/>
+			<user name="snguyen"/>
+			<user name="aknigam"/>			
+			<user name="agurevic"/>
+			<user name="cchiu"/>
+			<user name="smadhwap"/>
+			<user name="alei"/>
+			<user name="nskarnik"/>
+			<user name="kganesh"/>
+			<user folder="idc" name="ynavot"/>
+			<user folder="idc" name="navits"/>
+			<user name="wfung" type="member"/>
+			<user name="junw" type="member"/>
+		</userlist>
+	
+		<flags>
+			<flag name="High"/>
+			<flag name="Medium"/>
+			<flag name="Low"/>
+			<flag name="Question"/>
+			<flag name="Released"/>
+			<flag name="NA"/>
+			<flag name="Released2ClrCase"/>
+			<flag name="DuplicateTicket"/>
+		</flags>
+	
+		<templates>
+			<mailtemp name="Missing info">
+				We are missing information, please send us EZQB cell/net/pin name.
+				Thanks!
+			</mailtemp>
+			
+			<mailtemp name="Non reproducible">
+				Please specify the steps you did in order to be able reproduce the problems.
+				Thanks!
+			</mailtemp>
+			
+			<mailtemp name="Wrong version">
+				You are using wrong tool versions, please reload setup or used the following ot file.
+				Thanks!
+			</mailtemp>
+			
+			<closetemp name="Thanks/Done">
+				Your issue has been resolved.
+				Thanks a lot for opening a daHelp ticket!
+			</closetemp>
+			
+			<closetemp name="Could not help">
+				Hi, we could not help you with this issue.
+				For further assistance contact your superior.
+			</closetemp>
+		</templates>
+	
+		<categories>
+                        <category name="Clock Flow">
+                                <field name="EZQB file path"/>
+                                <field name="Tool version (Atlas)" sysvar="ATLAS"/>
+                                <field name="Tool version (Parade)" sysvar="PARADE"/>
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+                                <field name="Name of Expert User Consulted"/>
+                        </category>
+			<category name="File I/O">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="GUI">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="BindKeys">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Strokes">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with the following flows: PA2ISS, LOEVR, RLS, Repeater, Silver..." name="FC Flows">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Subcategory">
+					<option name="LOEVR"/>
+					<option name="RLS"/>
+					<option name="Repeater"/>
+					<option name="Silver"/>
+					<option name="Other"/>
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with PV related commands/flow (PV advisory, IC Analysis)" name="PV">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with XTOR/Block Mode..." name="Placements">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Subcategory">
+					<option name="XTOR"/>
+					<option name="Other"/>
+				</field>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Bus Design/Shake/Snap2Pin..." name="QB Expand">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Trex, Art, Draw mode (PTPED)..." name="Routing">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Subcategory">
+					<option name="Trex"/>
+					<option name="Art"/>
+					<option name="Route-completion"/>
+					<option name="PTPED"/>
+					<option name="Other"/>
+				</field>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with database or released rollup files/reports..." name="Rollup/DB related">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="How do I?">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>	
+				<field name="Name of Expert User Consulted"/>						
+			</category>
+			<category description="Any problem with FUB level L.O flows..." name="FUB Flows">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Subcategory">
+					<option name="HandShake"/>
+					<option name="FubFlow"/>
+					<option name="Other"/>
+				</field>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Power">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with FC reports/checkers commands..." name="FC Checkers/Reports">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with FUB level checkers/reports commands..." name="FUB Checkers/Reports">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Vias editing/Via optimization GUI" name="Via Optimization">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Congestion Analysis flow..." name="Congestion Analysis Flow">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+		</categories>
+	</team>
+
+
+	
+	<team name="STD Libraries-US" site="sc fm">
+		<userlist>
+			<user name="rlstamne" type="admin"/>
+			<user name="asvidler"/>
+			<user name="oelster"/>
+			<user name="ayona"/>
+                        <user name="bmuralim"/>
+			<user name="gilk"/>
+			<user name="sgeorge"/>
+			<user name="lgoffman"/>
+                        <user name="kganesh"/>	
+			<user name="cchiu"/>
+			<user name="gdevaraj" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="R00">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+			<category name="T00">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+			<category name="TM0">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+			<category name="V00">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+			<category name="YG0">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+			<category name="YG7">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+			<category name="YT0">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+			<category name="Y8">
+				<field name="Name of Expert User Consulted"/>
+                                <field name="Enter Library Version"/>
+			</category>			
+
+		</categories>
+	</team>
+
+	<team name="STD Libraries" site="idc png ibw">
+		<userlist>
+			<user name="ltepper"/>
+			<user name="asvidler" type="admin"/>
+			<user name="oelster" type="member"/>
+			<user name="ayona"/>
+			<user name="gilk"/>
+			<user name="ykuan1"/>
+			<user name="lkhor"/>
+			<user name="lgoffman"/>
+			<user name="lbarkai"/>
+			<user name="cchiu" type="readonly"/>			
+			<user name="zwayner" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+		</templates>
+	
+		<categories>
+			<category name="T00"/>
+			<category name="YG0"/>
+			<category name="YG7"/>
+			<category name="YT0"/>
+			<category name="Y8"/>
+			<category name="YXX"/>
+			<category name="galla"/>
+			<category name="AI0">
+				<field name="Library Tag / Milstone">
+					<option name="ivbstd_1.0.1"/>
+					<option name="cdr0"/>
+					<option name="silver"/>
+					<option name="Other"/>
+					<option name="ivbstd_0.41"/>
+					<option name="cdrf"/>
+					<option name="cdr2"/>
+					<option name="ivbstd_2.0"/>
+					<option name="cdr1"/>
+				</field>
+			</category>
+			<category name="AI7">
+				<field name="Library Tag / Milstone">
+					<option name="ivbstd_1.0.1"/>
+					<option name="cdr0"/>
+					<option name="silver"/>
+					<option name="Other"/>
+					<option name="ivbstd_0.41"/>
+					<option name="cdrf"/>
+					<option name="cdr2"/>
+					<option name="ivbstd_2.0"/>
+					<option name="cdr1"/>
+				</field>
+			</category>
+			<category name="c9prim">
+				<field name="Library Tag / Milstone">
+				</field>
+			</category>
+			<category name="CS0">
+			</category>
+			<category name="CS7">
+				<field name="Library Tag / Milstone">
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="CS0">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Library Tag / MilstoneLo">
+				</field>
+			</category>
+		</categories>
+	</team>
+	
+	<team name="Eden" site="idc png ibw">
+		<userlist>
+			<user name="ialush"/>
+			<user name="danielbr"/>
+			<user name="navits"/>
+			<user name="vrubin1"/>
+			<user name="ndovgole"/>
+			<user name="ssaba" type="member"/>
+			<user name="lefrat"/>
+			<user name="doronb"/>
+			<user name="graz"/>
+			<user name="ynavot"/>
+			<user name="shafez"/>
+			<user name="smichael" type="admin"/>
+			<user name="fswaid"/>
+			<user name="ykimhi"/>
+			<user name="ahoffman"/>
+			<user name="whendawi"/>
+			<user name="rzand"/>
+			<user name="ylevani"/>
+			<user name="cchiu" type="readonly"/>
+			<user name="ibidassa" type="member"/>
+			<user name="skr" type="member"/>
+			<user name="nmegnazi" type="member"/>
+			<user name="yeshkol" type="member"/>
+			<user name="galbalan" type="member"/>
+			<user name="terlich" type="member"/>
+			<user name="sagrawal" type="member"/>
+			<user name="rlstamne" type="member"/>
+			<user name="akasibha" type="member"/>
+		</userlist>
+
+		<flags>
+			<flag name="Released"/>
+			<flag name="NA"/>
+			<flag name="Released2ClrCase"/>
+			<flag name="DuplicateTicket"/>
+		</flags>
+		
+		<templates>
+			<closetemp name="Done">
+				Issue is resolved.
+				If you need anything else, please let us know.
+				Thanks!
+			</closetemp>
+			
+			<closetemp name="No Bug">
+				This is not a bug
+				If you need anything else, please let us know.
+				Thanks!
+			</closetemp>
+		</templates>
+		
+		<categories>
+			<category name="GUI">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+			</category>
+			<category name="PV">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Logic">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Synthesis">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Connectivity">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Placement">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Routing">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="RFD">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="QPD">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Relativity">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="File I/O">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="How do I?">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Layout">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Netlist">
+			</category>
+			<category name="Opus">
+			</category>			
+			<category name="Power">
+			</category>
+			<category description="ATF Problems" name="ATF">
+			</category>
+			<category description="Issues with checkers in EDEN" name="Checkers">
+			</category>
+			<category description="What If system issues" name="What If">
+			</category>
+			<category name="CDE">
+			</category>
+			<category description="Eden RLS" name="ED-RLS">
+			</category>
+			<category name="Snake">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="Preditor (HPR)">
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="EZQB file path">
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Eden-US" site="sc fm">
+		<userlist>
+			<user name="satish"/>			
+			<user name="ttrinh"/>			
+			<user name="fhu"/>			
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>			
+			<user name="yaell" type="member"/>
+			<user name="schoe" type="member"/>
+			<user name="hntran" type="member"/>
+			<user name="rlstamne" type="member"/>
+			<user name="aknigam" type="member"/>
+			<user name="vskoleso" type="member"/>
+			<user name="bkrishna" type="member"/>
+			<user name="gdevaraj" type="member"/>
+			<user name="bchoi" type="member"/>
+			<user name="sagrawal" type="admin"/>
+			<user name="sbhal" type="member"/>
+			<user name="akasibha" type="member"/>
+		</userlist>
+
+		<flags>
+			<flag name="Released"/>
+			<flag name="NA"/>
+		</flags>
+		
+		<templates>
+			<closetemp name="Done">
+				Issue is resolved.
+				If you need anything else, please let us know.
+				Thanks!
+			</closetemp>
+			
+			<closetemp name="No Bug">
+				This is not a bug
+				If you need anything else, please let us know.
+				Thanks!
+			</closetemp>
+		</templates>
+		
+		<categories>
+			<category name="GUI">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>								
+			</category>
+			<category name="PV">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Logic">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Synthesis">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Connectivity">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Placement">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="Routing">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="RFD">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="QPD">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Relativity">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="File I/O">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="How do I?">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Layout">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Netlist">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="Opus">
+				<field name="Name of Expert User Consulted"/>			
+			</category>			
+			<category description="NLVIEW Related Issues" name="NLVIEW">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category description="ATF Problems" name="ATF">
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category description="Issues with checkers in EDEN" name="Checkers">
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category description="What If system issues" name="What If">
+				<field name="Name of Expert User Consulted"/>
+			</category>
+		</categories>
+	</team>
+
+
+
+	<team name="SVA Support" site="idc png ibw">
+		<userlist>
+			<user name="anathans" type="admin"/>
+			<user name="awolff"/>
+			<user name="dcarmi"/>
+			<user name="sandrey"/>
+			<user name="sdany"/>
+			<user name="dkorchem"/>
+			<user name="belfere"/>
+			<user name="nbarlev"/>
+			<user name="jawadh"/>
+			<user name="diklaf"/>
+			<user name="tamirs"/>
+			<user name="mfaybish"/>
+			<user name="llibis"/>
+			<user name="alonf"/>
+			<user name="cchiu" type="readonly"/>
+		</userlist>
+		
+		<flags>
+		</flags>
+		
+		<templates>
+		</templates>
+		
+		<categories>
+			<category name="ABV Tool/Environment">
+				<field name="Cluster">
+					<option name="FC"/>
+					<option name="Power"/>
+					<option name="LT"/>
+					<option name="DFX"/>
+					<option name="GLS"/>
+					<option name="Uncore"/>
+					<option name="UCOD"/>
+					<option name="MEM"/>
+					<option name="EXE"/>
+					<option name="FE"/>
+					<option name="MSID"/>
+					<option name="OOO"/>
+					<option name="Formal"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			<category name="SVA coding">
+				<field name="Cluster">
+					<option name="FC"/>
+					<option name="Power"/>
+					<option name="LT"/>
+					<option name="DFX"/>
+					<option name="GLS"/>
+					<option name="Uncore"/>
+					<option name="UCOD"/>
+					<option name="MEM"/>
+					<option name="EXE"/>
+					<option name="FE"/>
+					<option name="MSID"/>
+					<option name="OOO"/>
+					<option name="Formal"/>
+					<option name="Other"/>
+				</field>
+			</category>
+			<category description="Any problem related to ABV/SVA coding" name="ABV">
+				<field name="Problem with">
+					<option name="ABV Flows (ArenaV, Assertion)"/>
+					<option name="ABV Trigger coverage flow"/>
+					<option name="SVA Coding"/>
+					<option name="Other"/>
+				</field>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Power DA" site="idc png ibw">
+		<userlist>
+			<user name="ragbaria" type="admin"/>
+			<user name="mabozaed"/>
+			<user name="nsucher"/>
+			<user name="lmakovsk"/>
+			<user name="saburahm"/>
+			<user name="atzemach"/>
+                        <user name="kganesh"/>
+			<user name="cchiu" type="readonly"/>			
+			<user name="suchithra.p.p" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<templates>
+			<mailtemp name="Missing info">
+				We are missing information, please add it as soon as possible. 
+				Thanks!
+			</mailtemp>
+			
+			<closetemp name="Thanks/Done">
+				Your issue has been resolved.
+				Thanks a lot for opening a daHelp ticket!
+			</closetemp>
+		</templates>
+	
+		<categories>
+			<category description="Any problem with power inside cde" name="pde">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>			
+			
+			<category description="Any problem in the leakage calculator tool" name="Leakage calculator">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			
+			<category description="Any problem with leap tool" name="Leap">
+			</category>
+			
+			<category description="General problem with the power tool suite (unified setup,tool version)" name="vulcan">
+			</category>
+			
+			<category description="Any problem with Clock Tree Synthesis (CTS) tool" name="CTS">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Optimizations" site="idc png ibw">
+		<userlist>
+			<user name="tdizengo" type="admin"/>
+			<user name="leonidg"/>
+			<user name="aohana"/>
+			<user name="ajacoby"/>
+			<user name="hmazur" type="member"/>
+			<user name="cchiu" type="readonly"/>			
+			<user name="tnaim" type="readonly"/>
+			<user name="ifaat" type="member"/>
+			<user name="ibidassa" type="member"/>
+			<user name="bemanuel" type="member"/>
+		</userlist>
+
+		<flags>
+		</flags>
+
+		<categories>
+			<category name="getz"/>
+			<category name="tango_lr">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="ralicbd">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="rali_xt">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="MDF">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="other">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category name="TWO">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="clock tree sizing" name="CTS">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="GT_DA-US" site="fm">
+		<userlist>
+			<user name="emkatirc"/>
+			<user name="marasaia"/>
+			<user name="srkankip"/>
+			<user name="dtnguye3"/>
+			<user name="mmelnik" type="admin"/>
+			<user name="mnichels"/>			
+			<user name="sboumara"/>
+			<user name="ghe1"/>
+			<user name="ltan17"/>
+			<user name="jkhetan"/>
+			<user name="azahera"/>
+			<user name="ckuay1"/>
+			<user name="azahera"/>
+			<user folder="IDC" name="akhayim"/>
+			<user folder="IDC" name="btsipi"/>
+			<user folder="IDC" name="echigiri"/>
+			<user folder="IDC" name="leor"/>
+			<user folder="IDC" name="fpierre"/>
+			<user folder="IDC" name="omeiri"/>
+			<user folder="IDC" name="tkolat"/>
+			<user folder="IDC" name="alexbeyd"/>
+			<user folder="IDC" name="abarhum"/>
+			<user name="yosi" type="readonly"/>
+			<user name="cdloenta" type="member"/>
+			<user name="dtnguye6" type="member"/>
+		</userlist>
+
+		<templates>
+		</templates>
+
+		<flags>
+		</flags>
+
+		<categories>
+			<category name="Genesys"/>
+			<category name="ISS/GPDS"/>
+			<category name="LVS/DRC"/>
+			<category name="Galaxy"/>
+			<category name="Presto"/>
+			<category name="Gallery"/>
+			<category name="Environment - UE"/>
+			<category name="RV/IR"/>
+			<category name="Intcinerator"/>
+			<category name="Ram Compiler"/>
+			<category name="AgingSim"/>
+			<category name="Ultrasim"/>
+			<category name="APV"/>
+			<category name="FUB PV-US">
+			</category>
+			<category name="FCT.tango">
+			</category>
+		</categories>
+	</team>
+
+	<team name="Synopsys-IDC" site="idc ibw">
+		<userlist>
+			<user name="zwebbx" type="admin"/>
+			<user name="shafez" type="member"/>
+			<user name="edanie1x" type="member"/>
+			<user name="dleon" type="member"/>
+			<user name="mtsachix" type="member"/>
+			<user name="mzeltsex" type="member"/>
+			<user name="omilter" type="member"/>
+			<user name="ebarnirx" type="member"/>
+			<user name="lrabin1x" type="member"/>
+			<user name="kadanh" type="member"/>
+			<user name="along" type="member"/>
+			<user name="inas" type="member"/>
+			<user name="pkornisx" type="member"/>
+			<user name="zleshemx" type="member"/>
+			<user name="evainer" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="Ic compiler related issues" name="ICC">
+				<field name="Workarea path">
+				</field>
+			</category>
+			<category description="CTmesh relate issues" name="CTMesh">
+				<field name="Workarea path">
+				</field>
+			</category>
+			<category description="DC related tickets" name="DC">
+				<field name="Workarea path" sysvar="DBB"/>
+			</category>
+			<category description="Routing relate issues" name="Routing">
+				<field name="Workarea path">
+				</field>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Analog-IDC" site="idc ibw">
+		<userlist>
+			<user name="zwayner" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="Any analog design related issue" name="Analog-All">
+			</category>
+		</categories>
+	</team>
+
+	<team name="MoTec" site="idc ibw">
+		<userlist>
+			<user name="ybereby" type="admin"/>
+			<user name="ronenk" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="Smily" name="Smily">
+				<field name="Workarea path">
+				</field>
+				<field name="Problematic command">
+				</field>
+			</category>
+		</categories>
+	</team>
+
+	<team name="iMPV-Emulation" site="idc fm ibw">
+		<userlist>
+			<user name="vberinsk" type="admin"/>
+			<user name="belfere" type="member"/>
+			<user name="mdaliyot" type="member"/>
+			<user name="anathans" type="member"/>
+			<user name="ohavshus" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+			
+		<flags>
+		</flags>
+			
+		<categories>
+			<category name="run tools">
+			</category>
+			<category name="build tools">
+			</category>
+			<category name="FC 3 bring up">
+			</category>
+			<category name="debug tools">
+			</category>
+			<category name="FC 0.8 bring up">
+			</category>
+			<category description="envvars, paths, etc" name="emulation environment">
+			</category>
+		</categories>
+	
+	</team>
+	
+	<team name="GLS-IDC" site="idc png ibw">
+		<userlist>
+			<user name="cyrilk" type="admin"/>
+			<user name="akamer" type="member"/>
+			<user name="ctiran" type="member"/>
+			<user name="mrotbart" type="member"/>
+			<user name="memmer" type="member"/>
+			<user name="ariel" type="member"/>
+			<user name="mlerer" type="member"/>
+			<user name="jfbargh" type="member"/>
+			<user name="mfrazer" type="member"/>
+			<user name="ahemo" type="member"/>
+			<user name="snikolai" type="member"/>
+			<user name="evaiderg" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="RTL failure" name="RTL (Run or Process)">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="UEsetup Command">
+				</field>
+			</category>
+			<category description="Jigsaw failure" name="Jigsaw">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="UEsetup Command">
+				</field>
+			</category>
+			<category description="MKSPC failure" name="MKSPC">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="UEsetup Command">
+				</field>
+			</category>
+			<category name="Any Other Issue">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="UEsetup Command">
+				</field>
+			</category>
+			<category name="Unmapped Signals">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="UEsetup Command">
+				</field>
+			</category>
+			<category description="Failure during GetFEV step" name="GetFEV">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="UEsetup Command">
+				</field>
+			</category>
+			<category description="Build Shark Failure" name="Build Shark">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="UEsetup Command">
+				</field>
+			</category>
+			<category name="Tunings">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="RV-IDC" site="idc png iind ibw">
+		<userlist>
+			<user name="ornag" type="admin"/>
+			<user name="opherk" type="member"/>
+			<user name="ypogerov" type="admin"/>
+			<user name="danielbr" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+		
+	</team>
+	
+	<team name="Fub Lay-BDC" site="iind">
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="akilla" type="member"/>
+			<user name="anilabh" type="member"/>
+			<user name="snguyen" type="member"/>
+			<user name="echigiri" type="member"/>
+			<user name="dstemen" type="member"/>
+			<user name="rhallur" type="member"/>
+			<user name="rkarturi" type="member"/>
+			<user name="aanantha" type="member"/>
+			<user name="mpatan" type="member"/>
+			<user name="mjpurohi" type="member"/>
+			<user name="ssubr24" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="All the LV Flows related issue" name="LV Flows">
+			</category>
+			<category description="All the layout related issue" name="Layout">
+			</category>
+		</categories>
+		
+	</team>
+	
+	<team name="DB-BDC" site="iind">
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="pedros" type="readonly"/>
+			<user name="saarm" type="readonly"/>
+			<user name="anilabh" type="member"/>
+			<user name="skumar12" type="member"/>
+			<user name="mgoel1" type="member"/>
+			<user name="snkashya" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="ECO/HSD Issues">
+			</category>
+			<category description="Only issues regarding daHelp applications" name="daHelp">
+			</category>
+			<category description="Any library/tool permission issues" name="Permissions">
+			</category>
+			<category description="Any issues about the Safran Tools" name="Safran">
+			</category>
+			<category description="Registers configuration databse tool" name="ConfigDB Tool">
+			</category>
+			<category description="Record System Issues that impact the DB" name="System Issue">
+			</category>
+			<category name="Others">
+			</category>
+			<category name="Cereal/FCM">
+				<template>
+					Anything about Cereal/FCM Tool
+				</template>
+			
+			</category>
+			<category description="Resizing/Extending STODs or Workareas" name="STOD/Disk Issues">
+			</category>
+			<category description="Anything about the Gallery Tool" name="Gallery">
+			</category>
+			<category description="UESetup Bugs, UESetup troubles or errors" name="UESetup Issues">
+			</category>
+			<category description="ATF related Issue" name="ATFs">
+			</category>
+		</categories>
+	</team>
+
+	<team name="RLS-BDC" site="iind">
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="ssrinath" type="member"/>
+			<user name="sgoswami" type="member"/>
+			<user name="av4" type="member"/>
+			<user name="pkshriva" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="ICC PLACE">
+			</category>
+			<category name="ICC Routing">
+			</category>
+			<category name="ICC ClockTreeMesh">
+			</category>
+			<category name="ECO">
+			</category>
+			<category name="Design Compiler">
+			</category>
+		</categories>
+	</team>
+
+
+	<team name="PreSi Validation-BDC" site="iind">
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="njiyenga" type="member"/>
+			<user name="mgoel1" type="member"/>
+			<user name="bbalasub" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="Val.Turnin">
+			</category>
+			<category name="Val.CATS">
+			</category>
+			<category name="Val.Creg">
+			</category>
+			<category name="RTL.Chef">
+			</category>
+			<category name="RTL.SVA">
+			</category>
+			<category name="Val.Freq_Cov">
+			</category>
+			<category name="Val.Simbuild">
+			</category>
+			<category name="Val.BK">
+			</category>
+			<category name="Val.INCA">
+			</category>
+			<category name="Val.BMW">
+			</category>
+			<category description="covers simregress, trex, other simulation/debugging tools" name="Val.Simulation_Tools">
+			</category>
+			<category name="RTL.ERTL_Meth">
+			</category>
+			<category name="Val.Compute">
+			</category>
+			<category description="Covers Specman, VCS, Verdi" name="Val.Tools">
+			</category>
+			<category description="covers arean, fcm, nbflow, reginfo.gsrTk and other small tools/flows" name="Val.Others">
+			</category>
+		</categories>
+	</team>
+
+
+
+	<team name="ATPG-IDC" site="idc ibw">
+		<userlist>
+			<user name="dgoldins" type="admin"/>
+			<user name="ushpiro" type="member"/>
+			<user name="dtigran" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="Questions regarding iscan sealing data/flows" name="Sealing">
+			</category>
+			<category name="iscan % questions">
+			</category>
+			<category description="File a request for iscan waiver" name="Waiver">
+			</category>
+		</categories>
+
+	</team>
+
+	<team name="DB-FC" site="fchd">
+		<userlist>
+			<user name="dbrown" type="admin"/>
+			<user name="akagalwa"/>
+		</userlist>
+	
+		<flags>
+		</flags>
+	
+		<templates>
+			<mailtemp name="Missing information">
+				Your ticket cannot be processed as we are missing infomation.
+				Please update your ticket with the relevant information.
+			</mailtemp>
+			<mailtemp name="Unavailable">
+				I cannot reach you on your mobile/cubic phone.
+				Please contact me when you become available.
+			</mailtemp>			
+			<mailtemp name="Move workarea">
+				In order to resize your area, it must be moved to a different disk
+				This can be done overnight, but you must not write to your disk during this procedure.
+				The next day, you should open all setup sessions that you had.
+				Please let me know if tonight is a good time for this.
+			</mailtemp>
+			<closetemp name="Done">
+				Done!
+			</closetemp>
+			<closetemp name="Added to group">
+				Added you to the unix group.
+				Please notice it takes up to 1 hour to update, and that you'll need to 
+				start a new session in order for it to take effect (by running ssh `hostname`)
+			</closetemp>
+			<closetemp name="CMCC">
+				Please open a service request for this ticket.
+			</closetemp>
+			<mailtemp name="More than 16 groups">
+				Hi,
+				I tried to add you to the group, but you already belong to 16 groups, which is the Unix limit.
+				Please remove yourself from groups by running "gm" on idc-login machine and follow the interactive menu.
+				Let me know once you are done and I will add you to the group.
+			</mailtemp>
+			<mailtemp name="Global directory">
+				Hi,
+				Your personal details, including cubic/mobile phone numbers are not updated in the coorporate phonebook.
+				To help us support you in the future, we would appreciate if you could update your details:
+				1. Go to Intel home.
+				2. Click 'Corp. Phonebook', on the right.
+				2. Search for yourself, in the format: lastName, firstName.
+				3. Click on your name link in the result table.
+				4. Click on the 'Update details' button on the upper right corner.
+				
+				Thank-you for helping us help you!
+			</mailtemp>
+		</templates>
+
+		<categories>
+			<category name="Database">
+				<field name="Name of Expert User Consulted"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>			
+			
+			<category name="CadTools CheckIn">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>
+
+			<category name="Opus/Safran">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>
+			
+			<category name="Web DB-Center">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="Gallery/SQL">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>								
+			</category>
+			
+			<category name="ATF">
+				<field name="Name of Expert User Consulted"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+		
+                        <category name="FCM">
+                                <field name="Name of Expert User Consulted"/>
+                                <field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>                        
+                                <field name="Hostname" sysvar="hostname"/>
+                                <field name="DMSPATH" sysvar="DMSPATH"/>
+                        </category>
+
+	
+			<category name="daHelp">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="Disk/GWA issues">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="UEsetup">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+
+			<category name="Netlist with TP">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>
+			
+			<category name="Nike Netlister">
+				<field name="Name of Expert User Consulted"/>			
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>				
+				<field name="Hostname" sysvar="hostname"/>				
+				<field name="DMSPATH" sysvar="DMSPATH"/>				
+			</category>			
+
+			<category description="Opus issues or issues regarding schematics" name="Opus &amp; Schematics"/>
+		</categories>
+	</team>
+
+	<team name="FUB PV-FC" site="fchd">
+		<userlist>
+			<user name="styler1" type="admin"/>
+		</userlist>
+	
+		<flags>
+		</flags>
+	
+		<templates>
+		
+			<closetemp name="Tango FAQ">
+				Please read Tango FAQ at:
+				http://carmel.iil.intel.com/folders/mpg-design/mmg%20ida/DP%20Design/Lists/FAQs/Categorized.aspx
+				Thanks!
+			</closetemp>
+		
+		</templates>
+	
+		<categories>
+                        <category name="Presto">
+                                <field name="Name of Expert User Consulted"/>
+                        </category>				
+			<category name="Power">
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Flipper">
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Raptor">
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoXT Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="TangoXT How to">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="TangoXT Fail">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="TangoXT Problem">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="tg_ta logfile"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>	
+			<category name="CAPREP">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="CfgWriter">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="EvrWriter">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Tango Checkin">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoCBD Fail">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoCBD Problem">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="TangoCBD Question">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category name="Other">
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>				
+			<category description="Tango CI" name="Tango CI Failure">
+				<template>
+					Tango CI
+				</template>
+			</category>
+			<category description="iScan Tickets" name="iScan DP">
+			</category>
+			<category description="RaliCBD" name="RaliCBD">
+			</category>
+			<category description="Rali" name="Rali">
+			</category>
+			<category name="TangoLR">
+			</category>
+			<category name="TWO">
+			</category>
+		</categories>
+	</team>
+
+	<team name="Presto-FC" site="fchd">
+		<userlist>
+			<user name="bmahon1" type="admin"/>
+		</userlist>
+	
+		<flags>
+		</flags>
+		
+		<templates>
+			<mailtemp name="Missing info">
+				We are missing information, please send us x, y, z as soon as possible.
+			</mailtemp>
+			
+			<mailtemp name="Cannot reproduce">
+				We can not reproduce the problem in our environment, please contact us.
+			</mailtemp>
+		
+			<closetemp name="Done">
+				Your issue has been resolved.
+				Thanks a lot for opening a daHelp ticket!
+			</closetemp>
+			
+			<closetemp name="Presto bug">
+				Hi, to resolve this issue, we need a Presto bug fix.
+			</closetemp>
+		</templates>
+	
+		<categories>		
+			<category description="Any problem with Presto execution" name="Tool running">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Any problem with parasitics data" name="Parasitics">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="Problem with Opus communication" name="Opus">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Any issue with optimization tool" name="Optim">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+			</category>
+			<category description="Any issue with Nova" name="Nova">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="Any problem with power related activities in Presto" name="Power">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="Presto is stuck or has crashed" name="Crash">
+				<field name="Presto version"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Prs file path"/>
+			</category>
+			<category description="General questions" name="How do I?">
+				<field name="Presto version"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="Parade-FC" site="fchd">
+		<userlist>
+			<user name="raferrer" type="admin"/>
+		</userlist>
+	
+		<flags>
+			<flag name="High"/>
+			<flag name="Medium"/>
+			<flag name="Low"/>
+			<flag name="Question"/>
+			<flag name="Released"/>
+			<flag name="NA"/>
+			<flag name="Released2ClrCase"/>
+			<flag name="DuplicateTicket"/>
+		</flags>
+	
+		<templates>
+			<mailtemp name="Missing info">
+				We are missing information, please send us EZQB cell/net/pin name.
+				Thanks!
+			</mailtemp>
+			
+			<mailtemp name="Non reproducible">
+				Please specify the steps you did in order to be able reproduce the problems.
+				Thanks!
+			</mailtemp>
+			
+			<mailtemp name="Wrong version">
+				You are using wrong tool versions, please reload setup or used the following ot file.
+				Thanks!
+			</mailtemp>
+			
+			<closetemp name="Thanks/Done">
+				Your issue has been resolved.
+				Thanks a lot for opening a daHelp ticket!
+			</closetemp>
+			
+			<closetemp name="Could not help">
+				Hi, we could not help you with this issue.
+				For further assistance contact your superior.
+			</closetemp>
+		</templates>
+	
+		<categories>
+			<category name="Clock Flow">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="File I/O">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="GUI">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="BindKeys">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>			
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Strokes">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with the following flows: PA2ISS, LOEVR, RLS, Repeater, Silver..." name="FC Flows">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Subcategory">
+					<option name="LOEVR"/>
+					<option name="RLS"/>
+					<option name="Repeater"/>
+					<option name="Silver"/>
+					<option name="Other"/>
+				</field>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with PV related commands/flow (PV advisory, IC Analysis)" name="PV">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with XTOR/Block Mode..." name="Placements">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Subcategory">
+					<option name="XTOR"/>
+					<option name="Other"/>
+				</field>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Bus Design/Shake/Snap2Pin..." name="QB Expand">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Trex, Art, Draw mode (PTPED)..." name="Routing">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Subcategory">
+					<option name="Trex"/>
+					<option name="Art"/>
+					<option name="Route-completion"/>
+					<option name="PTPED"/>
+					<option name="Other"/>
+				</field>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with database or released rollup files/reports..." name="Rollup/DB related">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="How do I?">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>	
+				<field name="Name of Expert User Consulted"/>						
+			</category>
+			<category description="Any problem with FUB level L.O flows..." name="FUB Flows">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Subcategory">
+					<option name="HandShake"/>
+					<option name="FubFlow"/>
+					<option name="Other"/>
+				</field>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Power">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with FC reports/checkers commands..." name="FC Checkers/Reports">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with FUB level checkers/reports commands..." name="FUB Checkers/Reports">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Vias editing/Via optimization GUI" name="Via Optimization">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category description="Any problem with Congestion Analysis flow..." name="Congestion Analysis Flow">
+				<field name="EZQB file path"/>
+				<field name="Tool version (Atlas)" sysvar="ATLAS"/>
+				<field name="Tool version (Parade)" sysvar="PARADE"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+		</categories>
+	</team>
+
+	<team name="Eden-FC" site="fchd">
+		<userlist>
+			<user name="ccowan"/>			
+		</userlist>
+
+		<flags>
+			<flag name="Released"/>
+			<flag name="NA"/>
+		</flags>
+		
+		<templates>
+			<closetemp name="Done">
+				Issue is resolved.
+				If you need anything else, please let us know.
+				Thanks!
+			</closetemp>
+			
+			<closetemp name="No Bug">
+				This is not a bug
+				If you need anything else, please let us know.
+				Thanks!
+			</closetemp>
+		</templates>
+		
+		<categories>
+			<category name="GUI">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>								
+			</category>
+			<category name="PV">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Logic">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Synthesis">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Connectivity">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Placement">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="Routing">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="RFD">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="QPD">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Relativity">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="File I/O">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category name="How do I?">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Layout">
+				<field name="EZQB file path"/>
+				<field name="Tool version" sysvar="ATLAS"/>
+				<field name="Workarea path" sysvar="WORK_AREA_ROOT_DIR"/>
+				<field name="Name of Expert User Consulted"/>				
+			</category>
+			<category name="Netlist">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category name="Opus">
+				<field name="Name of Expert User Consulted"/>			
+			</category>			
+			<category description="NLVIEW Related Issues" name="NLVIEW">
+				<field name="Name of Expert User Consulted"/>			
+			</category>
+			<category description="ATF Problems" name="ATF">
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category description="Issues with checkers in EDEN" name="Checkers">
+				<field name="Name of Expert User Consulted"/>
+			</category>
+			<category description="What If system issues" name="What If">
+				<field name="Name of Expert User Consulted"/>
+			</category>
+		</categories>
+	</team>
+
+	<team name="RLS-FC" site="fchd">
+		<userlist>
+			<user name="rpraman" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="FEV">
+			</category>
+		</categories>
+	</team>
+	
+	<team name="DP-BDC" site="iind">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="sgoswami" type="member"/>
+			<user name="skr" type="member"/>
+			<user name="rchakra1" type="member"/>
+			<user name="tkagarwa" type="member"/>
+			<user name="sreddyg" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="Netlist">
+			</category>
+			<category name="ED-RLS">
+			</category>
+			<category name="Layout">
+			</category>
+			<category name="ATF">
+			</category>
+		</categories>
+	
+	</team>
+	
+	<team name="FUB PV-BDC" site="iind">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="tmishra" type="member"/>
+			<user name="sp4" type="member"/>
+			<user name="mgoel1" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="DP">
+			</category>
+			<category name="RLS">
+			</category>
+		</categories>
+	
+	</team>
+
+	<team name="Duet-BDC" site="iind">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="tmishra" type="member"/>
+			<user name="sp4" type="member"/>
+			<user name="mgoel1" type="member"/>
+			<user name="pkseshu" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="RLS">
+			</category>
+			<category description="DP Related Issues" name="DP">
+			</category>
+			<category name="Section">
+			</category>
+		</categories>
+	
+	</team>	
+	
+	<team name="Optimizations-BDC" site="iind">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="tmishra" type="member"/>
+			<user name="mgoel1" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="DP">
+			</category>
+			<category name="RLS">
+			</category>
+		</categories>
+	
+	</team>
+	
+	<team name="Eden-BDC" site="iind">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="skr" type="member"/>
+			<user name="rchakra1" type="member"/>
+			<user name="tkagarwa" type="member"/>
+			<user name="sgoswami" type="member"/>
+			<user name="sreddyg" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category name="Logic">
+			</category>
+			<category name="Checkers">
+			</category>
+			<category name="Synthesis">
+			</category>
+			<category name="GUI">
+			</category>
+			<category name="QPD">
+			</category>
+			<category name="Placement">
+			</category>
+			<category name="What If">
+			</category>
+			<category name="Preditor(HPR)">
+			</category>
+			<category name="How do I?">
+			</category>
+			<category name="CDE">
+			</category>
+			<category name="Routing">
+			</category>
+			<category name="File I/O">
+			</category>
+			<category name="Snake">
+			</category>
+			<category name="Connectivity">
+			</category>
+		</categories>
+	
+	</team>
+	
+	<team name="Opus and Schematics-BDC" site="iind">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="skr" type="member"/>
+			<user name="rchakra1" type="member"/>
+			<user name="tkagarwa" type="member"/>
+			<user name="sreddyg" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="FC PV-IDC" site="idc ibw">
+	
+		<userlist>
+			<user name="dtatyana" type="admin"/>
+			<user name="gregoryf" type="member"/>
+			<user name="kshade" type="member"/>
+			<user name="doronb" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="SKL Design web" site="idc ibw">
+	
+		<userlist>
+			<user name="aliron" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="Create Sub Site" name="Create Sub Site">
+				<field name="site owner">
+				</field>
+				<field name="Parent URL">
+				</field>
+				<field name="site Name">
+				</field>
+			</category>
+			<category description="Extend SKL Design search scope with additional URL (according to users local permissions)" name="Extend Search scope">
+				<field name="Inseart URL">
+				</field>
+			</category>
+			<category description="Create Page\Web part" name="Create Page\Web part">
+				<field name="Insert URL (parent location)">
+				</field>
+				<field name="Select page">
+					<option name="Video with Preview"/>
+					<option name="Internal Training"/>
+					<option name="Visio Viewer"/>
+					<option name="PDF Viewer"/>
+					<option name="Excel with Indicators"/>
+					<option name="Other (fill Tickect details)"/>
+					<option name="Maps"/>
+					<option name="YouTube"/>
+					<option name="PPT Page"/>
+					<option name="DB Center Page"/>
+				</field>
+			</category>
+		</categories>
+	
+	</team>
+
+	<team name="FC PV-BDC" site="iind">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+			<user name="bgaur" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="RegisterFile-IDC" site="idc ibw">
+	
+		<userlist>
+			<user name="ayona" type="admin"/>
+			<user name="bdaher" type="member"/>
+			<user name="ibidassa" type="member"/>
+			<user name="ybuchner" type="member"/>
+			<user name="ezand" type="member"/>
+			<user name="whendawi" type="member"/>
+			<user name="sgeorge" type="member"/>
+			<user name="talik" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="array build automation" name="RAMBO - array build automation">
+			</category>
+			<category description="RF library" name="RF library">
+			</category>
+		</categories>
+	
+	</team>
+	
+	<team name="RegisterFile-US" site="sc fm">
+	
+		<userlist>
+			<user name="bchoi" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="array build automation" name="RAMBO - array build automation">
+			</category>
+			<category description="RF library" name="RF library">
+			</category>
+		</categories>
+	
+	</team>	
+	
+	<team name="Parade-BDC" site="png">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="DB-IBW" site="ibw">
+	
+		<userlist>
+			<user name="frichter" type="admin"/>
+			<user name="bneigenf" type="member"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+			<category description="UESetup bugs, UESetup troubles or errors" name="UESetup &amp; Database tools">
+			</category>			
+			<category description="Questions/Requests/Bugs regarding the ATF mechanism" name="ATFs">
+			</category>
+			<category description="Only issues about the Safran tool" name="Safran">
+			</category>
+			<category description="Anything about the Cereal tool" name="Cereal/FCM">
+			</category>
+			<category description="Anything about the Gallery tool" name="Gallery">
+			</category>
+			<category description="Only issues regarding the daHelp application. This is not a general category!" name="daHelp">
+			</category>
+			<category description="Any library/tool permissions issue" name="Permissions">
+			</category>
+			<category description="GDBimport, GDBexport, CI/CO." name="Import/Export tools">
+			</category>
+			<category description="Registers configuration database tool" name="ConfigDB Tool">
+			</category>
+			<category description="Creating, removing, renaming etc. of FUBs" name="FUBs Issues">
+			</category>
+			<category description="Any request to create/remove/rename blocks from the database" name="Create/remove blocks">
+			</category>
+			<category description="Record system issues that impact the DB" name="System issues">
+			</category>
+			<category description="IP export to remote projects" name="IP-Export">
+				<field name="IP Consumer">
+					<option name="Jaketown"/>
+					<option name="IVYBridge"/>
+					<option name="Haswell"/>
+					<option name="DTS"/>
+				</field>
+				<field name="Type">
+					<option name="Unix Archive"/>
+					<option name="SQL"/>
+					<option name="Synchronicity"/>
+					<option name="Other"/>
+					<option name="Access"/>
+				</field>
+			</category>
+			<category description="DB-Center technical issues only" name="Web DB-Center">
+			</category>
+			<category name="ECO / HSD issues">
+			</category>
+			<category description="Resizing/Extending STODs or workareas" name="STOD/Disk issues">
+				<field name="Requested operation">
+					<option name="Merge STODs"/>
+					<option name="Extend STOD's duration"/>
+					<option name="Resize STOD"/>
+				</field>
+				<field name="Full STOD path">
+				</field>
+			</category>
+		</categories>
+	
+	</team>
+
+	<team name="FCL-BDC" site="png">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="Noise-BDC" site="png">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="Power-BDC" site="png">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+	
+		<team name="FEV-BDC" site="png">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="FUB Extraction-BDC" site="png">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+	<team name="RV-BDC" site="png">
+	
+		<userlist>
+			<user name="nssingh" type="admin"/>
+		</userlist>
+		
+		<templates>
+		</templates>
+		
+		<flags>
+		</flags>
+		
+		<categories>
+		</categories>
+	
+	</team>
+
+</teamlist>
